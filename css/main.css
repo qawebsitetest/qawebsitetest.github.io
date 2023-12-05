@@ -73,7 +73,7 @@ body {
 }
 
 body {
-  background: #141a28;
+  background: var(--main-bg-color);
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.7rem;
   font-style: normal;
@@ -91,6 +91,9 @@ a {
   color: #793ea5;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+:root {
+  --main-bg-color: #091020;
 }
 
 @font-face {
@@ -2284,12 +2287,12 @@ body.menu-is-open {
   width: 100%;
   height: 100vh;
   min-height: 786px;
-  background-color: #141a28;
+  background-color: var(--main-bg-color);
   position: relative;
   display: table;
 }
 
-.s-home .grid-overlay > div {
+var .s-home .grid-overlay > div {
   display: none;
 }
 
@@ -2711,7 +2714,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 1400px) {
   .home-content h1 {
-    font-size: 9rem;
+    font-size: 8rem;
   }
   .smoothscroll {
     font-size: 5.5rem;
@@ -2734,7 +2737,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h1 {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   .home-content h3 {
@@ -2987,7 +2990,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
   padding-top: 18rem;
 
-  background-color: #141a28;
+  background-color: var(--main-bg-color);
   position: relative;
 }
 
@@ -3793,7 +3796,7 @@ html.no-csstransitions .home-content__main {
 .s-contact {
   padding-top: 16.2rem;
 
-  background-color: #141a28;
+  background-color: var(--main-bg-color);
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   position: relative;
@@ -4001,7 +4004,7 @@ footer {
   padding-top: 9rem;
   padding-bottom: 6rem;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #141a28;
+  background-color: var(--main-bg-color);
 
   text-align: center;
   position: relative;
