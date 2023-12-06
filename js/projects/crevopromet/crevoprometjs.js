@@ -135,10 +135,6 @@ const options8 = {
 
 // Start observing the target elements
 dynamicTextTyping(options);
-dynamicTextTyping(options2);
-dynamicTextTyping(options3);
-dynamicTextTyping(options4);
+
 
 dynamicTextTyping(options6);
-dynamicTextTyping(options7);
-dynamicTextTyping(options8);

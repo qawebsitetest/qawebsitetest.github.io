@@ -700,6 +700,7 @@ textarea {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+    margin-bottom: 10px;
   }
 
   [class*="col-"] + [class*="col-"].end {

@@ -141,7 +141,9 @@ h6,
   color: #ffffff;
   text-rendering: optimizeLegibility;
 }
-
+.p-crevo {
+  color: #da3c22;
+}
 h1,
 .h1,
 h2,
@@ -150,7 +152,7 @@ h3,
 .h3,
 h4,
 .h4 {
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 1.8rem;
 }
 
@@ -163,7 +165,7 @@ h4,
   .h3,
   h4,
   .h4 {
-    margin-top: 5.1rem;
+    margin-top: 2rem;
   }
 }
 
@@ -257,6 +259,9 @@ p.lead4 {
   line-height: 1.625;
   margin-bottom: 3.6rem;
 }
+.border-crevo {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 @media only screen and (max-width: 1200px) {
   p.lead {
@@ -300,6 +305,9 @@ strong,
 b {
   font-size: inherit;
   line-height: inherit;
+}
+.col-block {
+  margin-bottom: 3rem;
 }
 
 em,
@@ -1515,6 +1523,7 @@ body.menu-is-open {
 
 .bit-narrow {
   max-width: 100%;
+  margin-top: 7rem;
 }
 
 .darker {
@@ -1746,6 +1755,14 @@ body.menu-is-open {
 @media only screen and (max-width: 700px) {
   .display-1 {
     font-size: 4rem;
+  }
+  h2,
+  .h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  .section-header {
+    flex-direction: column;
   }
   .masonry__brick {
     height: 390px;
@@ -2293,7 +2310,7 @@ body.menu-is-open {
  * ------------------------------------------------------------------- */
 .s-home {
   width: 100%;
-  height: 100vh;
+
   min-height: 100vh;
   background-color: var(--main-bg-color);
   position: relative;
@@ -2316,7 +2333,7 @@ var .s-home .grid-overlay > div {
   vertical-align: middle;
   padding-top: 6.6rem;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   position: relative;
   z-index: 4;
@@ -2334,7 +2351,12 @@ var .s-home .grid-overlay > div {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value as needed */
+  background-color: rgba(
+    218,
+    60,
+    34,
+    0.3
+  ); /* Adjust the opacity value as needed */
   z-index: -1; /* Place the overlay behind the background image */
 }
 .home-content1 {
@@ -2966,7 +2988,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 400px) {
   .s-home {
-    min-height: 630px;
+    min-height: 50vh;
   }
   .site-logo {
     font-size: 4rem;
@@ -3086,7 +3108,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
   .s-about {
-    padding-top: 12rem;
+    padding-top: 3rem;
   }
   .image-div {
     margin-top: 0;
@@ -3965,6 +3987,9 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 700px) {
   .contact-main {
     font-size: 2.4rem;
+  }
+  .s-home {
+    min-height: 50vh;
   }
 
   .site-logo {
