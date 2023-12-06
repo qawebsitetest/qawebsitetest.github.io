@@ -649,7 +649,7 @@ dl,
 form,
 .video-container,
 .ss-custom-select {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 /* ===================================================================
@@ -1758,7 +1758,7 @@ body.menu-is-open {
   }
   h2,
   .h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.3;
   }
   .section-header {
@@ -3346,6 +3346,22 @@ html.no-csstransitions .home-content__main {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   z-index: 1;
+}
+@media only screen and (min-width: 701px) {
+  .large-image {
+    display: block;
+  }
+  .small-image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 701px) {
+  .large-image {
+    display: none;
+  }
+  .small-image {
+    display: block;
+  }
 }
 
 .item-folio__thumb a::after {
