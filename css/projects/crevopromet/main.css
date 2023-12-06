@@ -2988,7 +2988,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 400px) {
   .s-home {
-    min-height: 50vh;
+    min-height: 100vh;
   }
   .site-logo {
     font-size: 4rem;
@@ -3989,7 +3989,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.4rem;
   }
   .s-home {
-    min-height: 50vh;
+    min-height: 100vh;
   }
 
   .site-logo {
