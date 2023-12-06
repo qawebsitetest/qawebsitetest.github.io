@@ -150,7 +150,7 @@
             items.push(item);
         });
 
-        // bind click event
+        /* // bind click event
         $folioItems.each(function(i) {
 
             $(this).on('click', function(e) {
@@ -165,7 +165,7 @@
                 lightBox.init();
             });
 
-        });
+        }); */
     };
 
 

@@ -3348,7 +3348,7 @@ html.no-csstransitions .home-content__main {
   z-index: 1;
 }
 
-.item-folio__thumb a::after {
+/* .item-folio__thumb a::after {
   content: "...";
   font-family: georgia, serif;
   font-size: 2.7rem;
@@ -3371,7 +3371,7 @@ html.no-csstransitions .home-content__main {
   -ms-transform: scale(0.5);
   transform: scale(0.5);
   z-index: 1;
-}
+} */
 
 .item-folio__text {
   position: absolute;
