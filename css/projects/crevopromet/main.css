@@ -70,6 +70,7 @@ html {
 html,
 body {
   height: 100%;
+  letter-spacing: 1px;
 }
 
 body {
@@ -416,6 +417,9 @@ blockquote cite a,
 blockquote cite a:visited {
   color: rgba(255, 255, 255, 0.3);
   border: none;
+}
+.header-nav__list a {
+  letter-spacing: 1px;
 }
 
 abbr {
@@ -1752,6 +1756,7 @@ body.menu-is-open {
 .text-fluid {
   width: 50%;
 }
+
 @media only screen and (max-width: 700px) {
   .display-1 {
     font-size: 4rem;
@@ -1831,6 +1836,10 @@ body.menu-is-open {
   .display-1 {
     font-size: 3.6rem;
     margin-bottom: 4.5rem;
+  }
+  .p-crevo {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 
   .subhead {

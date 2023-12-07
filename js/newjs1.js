@@ -91,7 +91,14 @@ const options7 = {
     delay: 200,
     cursorSpeed: 900
 };
+const options6 = {
+    targetClass: "display-4",
+    text: "Feel free to contact us for any project idea or collaboration",
+    delay: 50,
+    cursorSpeed: 900
+};
 
 // Start observing the target elements
 
 dynamicTextTyping(options7);
+dynamicTextTyping(options6);

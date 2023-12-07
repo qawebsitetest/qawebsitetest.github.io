@@ -89,7 +89,7 @@ const optionsWithCursor5 = {
 };
 const optionsWithCursor6 = {
     targetClass: "application-text",
-    text: "Propel your business forward with our in-depth Application Development services, strategically designed to maximize potential and meet your unique operational needs.", 
+    text: "Propel your business forward with our in-depth Application Development services.", 
     delay: 30,
     cursorSpeed: 900 // Set the cursor speed in milliseconds
 };
@@ -101,7 +101,7 @@ const optionsWithCursor7 = {
 };
 const optionsWithCursor8 = {
     targetClass: "branding-text",
-    text: "Elevate your brand identity with our comprehensive branding services, where we craft distinctive narratives and visual elements that resonate, ensuring a lasting and impactful connection with your audience.", 
+    text: "Define your brand essence with our expert branding services, creating a lasting connection through distinctive narratives and visuals.", 
     delay: 30,
     cursorSpeed: 900 // Set the cursor speed in milliseconds
 };

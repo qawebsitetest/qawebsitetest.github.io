@@ -89,7 +89,7 @@ function dynamicTextTyping(options) {
 // Example usage
 const options = {
     targetClass: "h1add",
-    text: "Crevopromet",
+    text: "Crevopromet - 3M",
     delay: 80,
     cursorSpeed: 900
 };
