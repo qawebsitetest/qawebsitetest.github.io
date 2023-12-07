@@ -93,9 +93,21 @@ const optionsWithCursor6 = {
     delay: 30,
     cursorSpeed: 900 // Set the cursor speed in milliseconds
 };
+const optionsWithCursor7 = {
+    targetClass: "branding",
+    text: "Branding", 
+    delay: 30,
+    cursorSpeed: 900 // Set the cursor speed in milliseconds
+};
+const optionsWithCursor8 = {
+    targetClass: "branding-text",
+    text: "Elevate your brand identity with our comprehensive branding services, where we craft distinctive narratives and visual elements that resonate, ensuring a lasting and impactful connection with your audience.", 
+    delay: 30,
+    cursorSpeed: 900 // Set the cursor speed in milliseconds
+};
 
 // Example usage:
-dynamicTextTypingReverseWithObserver(options1);
+/* dynamicTextTypingReverseWithObserver(options1); */
 dynamicTextTypingReverseWithObserver(optionsWithCursor);
 dynamicTextTypingReverseWithObserver(optionsWithCursor1);
 dynamicTextTypingReverseWithObserver(optionsWithCursor2);
@@ -103,6 +115,8 @@ dynamicTextTypingReverseWithObserver(optionsWithCursor3);
 dynamicTextTypingReverseWithObserver(optionsWithCursor4);
 dynamicTextTypingReverseWithObserver(optionsWithCursor5);
 dynamicTextTypingReverseWithObserver(optionsWithCursor6);
+dynamicTextTypingReverseWithObserver(optionsWithCursor7);
+dynamicTextTypingReverseWithObserver(optionsWithCursor8);
 
 
 // Example usage:

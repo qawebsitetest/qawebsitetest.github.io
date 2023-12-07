@@ -133,13 +133,19 @@ const options8 = {
     delay: 10,
     cursorSpeed: 900
 };
+const options9 = {
+    targetClass: "service-title",
+    text: "We're a one-stop creative agency that turns great ideas into extraordinary brands.",
+    delay: 80,
+    cursorSpeed: 900
+};
 
 // Start observing the target elements
 dynamicTextTyping(options);
 dynamicTextTyping(options2);
 dynamicTextTyping(options3);
 dynamicTextTyping(options4);
-
+dynamicTextTyping(options9);
 dynamicTextTyping(options6);
 
 dynamicTextTyping(options8);
