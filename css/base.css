@@ -829,7 +829,7 @@ textarea {
 
   [class*="block-tab-"] .col-block:nth-child(n) {
     clear: none;
-    min-height: 300px; /* Default min-height for elements other than the 1st */
+    /* Default min-height for elements other than the 1st */
   }
 
   .block-tab-1-6 .col-block:nth-child(6n + 1),
