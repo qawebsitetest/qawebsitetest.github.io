@@ -563,7 +563,27 @@
 
 
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if the browser is Microsoft Edge
+            if (/Edge\/\d./i.test(navigator.userAgent) && !/Edg(e)?\/\d./i.test(navigator.userAgent)) {
+                // Smooth scrolling for Microsoft Edge
+                document.body.style.scrollBehavior = 'smooth';
 
+                // Optionally, you can customize the scrolling behavior further using JavaScript
+                // For example, you can add an event listener to specific elements
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+            }
+        });
+    </script>
 
 
 
