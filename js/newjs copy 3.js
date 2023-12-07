@@ -1,21 +1,8 @@
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
 function dynamicTextTypingReverseWithObserver(options) {
-    const { targetClass, text, delay, cursorSpeed } = options;
+    const { targetClass, text, delay } = options;
 
     const div = document.querySelector(`.${targetClass}`);
     div.innerHTML = "";
-    const cursor = document.createElement("span");
-    cursor.textContent = "|";
-    cursor.style.visibility = "hidden"; // Initially hide the cursor
-    const cursorBlinkSpeed = 800;
 
     let i = text.length - 1;
 
@@ -37,47 +24,20 @@ function dynamicTextTypingReverseWithObserver(options) {
 
     function textTypingReverseWithDelayAndNewLines() {
         if (i >= 0) {
-            if (i !== text.length - 1) {
-                div.removeChild(cursor);
-            }
             addNewLines();
             div.innerHTML = text[i] + div.innerHTML;
-            div.appendChild(cursor);
-
-            // Change cursor opacity with animation
-            cursor.style.transition = `opacity ${cursorSpeed / 2 / 1000}s`;
-            cursor.style.opacity = 0.3;
-
-            setTimeout(() => {
-                cursor.style.opacity = 1;
-            }, cursorSpeed / 2);
 
             i--;
             setTimeout(textTypingReverseWithDelayAndNewLines, delay);
-        } else {
-            // Continuously change cursor opacity
-            setInterval(() => {
-                cursor.style.transition = `opacity ${cursorSpeed / 2 / 1000}s`;
-                cursor.style.opacity = 0.3;
-
-                setTimeout(() => {
-                    cursor.style.opacity = 1;
-                }, cursorSpeed / 2);
-            }, cursorBlinkSpeed);
         }
     }
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Element is in the viewport, start typing after a delay
-                cursor.style.visibility = "visible"; // Show the cursor
-                
-                // Introduce a delay before starting the typing animation
-                setTimeout(() => {
-                    textTypingReverseWithDelayAndNewLines();
-                    observer.unobserve(div); // Stop observing once triggered
-                }, 500); // 500 milliseconds (0.5 seconds) delay
+                // Element is in the viewport, start typing
+                textTypingReverseWithDelayAndNewLines();
+                observer.unobserve(entry.target); // Stop observing once triggered
             }
         });
     });
@@ -143,5 +103,6 @@ dynamicTextTypingReverseWithObserver(optionsWithCursor3);
 dynamicTextTypingReverseWithObserver(optionsWithCursor4);
 dynamicTextTypingReverseWithObserver(optionsWithCursor5);
 dynamicTextTypingReverseWithObserver(optionsWithCursor6);
+
 
 // Example usage:
