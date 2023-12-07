@@ -1,181 +1,145 @@
-function textTypingReverse(options) {
-    const { targetClass, speed, delay } = options;
-    const div = document.querySelector(`.${targetClass}`);
-
-    // Get the text content from the target class
-    const originalText = div.textContent.trim();
-
-    // Set the initial text in the div
-    div.innerHTML = '';
-
-    // Split the text into characters
-    const characters = originalText.split('');
-
-    // Set opacity for each character individually
-    characters.forEach((char, index) => {
-        const span = document.createElement("span");
-        span.style.opacity = 0;
-        span.textContent = char;
-        div.appendChild(span);
-    });
-
-    let i = characters.length - 1;
-
-    function textTypingReverseWithDelay() {
-        if (i >= 0) {
-            div.childNodes[i].style.opacity = 1;
-            i--;
-            setTimeout(textTypingReverseWithDelay, speed);
-        }
-    }
-
-    // Intersection Observer setup
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Element is in the viewport, start typing backward after a delay
-                setTimeout(() => {
-                    textTypingReverseWithDelay();
-                }, delay);
-                observer.unobserve(div); // Stop observing once triggered
-            }
-        });
-    });
-
-    // Start observing the target element
-    observer.observe(div);
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
 
-// Function to type text with cursor
-function textTypingWithCursor(options) {
-    const { targetClass, totalDuration, delay, cursorSpeed } = options;
+function dynamicTextTyping(options) {
+    const { targetClass, text, delay, cursorSpeed } = options;
 
     const div = document.querySelector(`.${targetClass}`);
-    const originalText = div.textContent.trim();
-    div.innerHTML = ''; // Clear the original content
-
-    const characters = originalText.split('');
-    const speed = totalDuration / characters.length;
+    div.innerHTML = "";
+    const cursor = document.createElement("span");
+    cursor.textContent = "|";
+    const cursorBlinkSpeed = 800;
 
     let i = 0;
 
-    function showLetterWithCursor() {
-        if (i < characters.length) {
-            const letter = characters[i];
+    function addNewLines() {
+        // Add new lines after specific parts of the text
+        const currentSubstring = text.substring(0, i);
+        const parts = [
+            'B2B & Full Stack Marketing agency',
+            'B2B & Full Stack Marketing agency Digital Advertising',
+            'B2B & Full Stack Marketing agency Digital Advertising Web Development'
+        ];
 
-            // Create a span for the letter
-            const letterSpan = document.createElement("span");
-            letterSpan.textContent = letter;
-
-            // Create a cursor for the current letter
-            const cursor = createCursor(cursorSpeed);
-
-            div.appendChild(letterSpan);
-            div.appendChild(cursor);
-
-            setTimeout(() => {
-                div.removeChild(cursor);
-                i++;
-                showLetterWithCursor();
-            }, speed);
-        } else {
-            // All letters are shown, add the final cursor at the end
-            const finalCursor = createCursor(cursorSpeed);
-            div.appendChild(finalCursor);
-        }
+        parts.forEach((part) => {
+            if (currentSubstring === part) {
+                div.innerHTML += '<br>';
+            }
+        });
     }
 
-    // Helper function to create a cursor
-    function createCursor(cursorSpeed) {
-        const cursor = document.createElement("span");
-        cursor.textContent = "|";
+    function textTypingWithDelayAndNewLines() {
+        if (i < text.length) {
+            if (i !== 0) {
+                div.removeChild(cursor);
+            }
+            addNewLines();
+            div.innerHTML += text[i];
+            div.appendChild(cursor);
 
-        // Add blinking effect to the cursor
-        setInterval(() => {
+            // Change cursor opacity with animation
             cursor.style.transition = `opacity ${cursorSpeed / 2 / 1000}s`;
-            cursor.style.opacity = cursor.style.opacity === "0" ? 1 : 0;
-        }, cursorSpeed);
+            cursor.style.opacity = 0.3;
 
-        return cursor;
+            setTimeout(() => {
+                cursor.style.opacity = 1;
+            }, cursorSpeed / 2);
+
+            i++;
+            setTimeout(textTypingWithDelayAndNewLines, delay);
+        } else {
+            // Continuously change cursor opacity
+            setInterval(() => {
+                cursor.style.transition = `opacity ${cursorSpeed / 2 / 1000}s`;
+                cursor.style.opacity = 0.3;
+
+                setTimeout(() => {
+                    cursor.style.opacity = 1;
+                }, cursorSpeed / 2);
+            }, cursorBlinkSpeed);
+        }
     }
 
     // Intersection Observer setup
     const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Element is in the viewport, start the animation
-                showLetterWithCursor();
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Element is in the viewport, start typing after a delay
+            cursor.style.visibility = "visible"; // Show the cursor
+            
+            // Introduce a delay before starting the typing animation
+            setTimeout(() => {
+                textTypingWithDelayAndNewLines();
                 observer.unobserve(div); // Stop observing once triggered
-            }
-        });
+            }, 500); // 900 milliseconds (0.9 seconds) delay
+        }
     });
+});
 
     // Start observing the target element
     observer.observe(div);
 }
 
-// Helper function to create a cursor
-function createCursor(cursorSpeed) {
-    const cursor = document.createElement("span");
-    cursor.textContent = "|";
-
-    // Add blinking effect to the cursor
-    setInterval(() => {
-        cursor.style.transition = `opacity ${cursorSpeed / 2 / 1000}s`;
-        cursor.style.opacity = cursor.style.opacity === "0" ? 1 : 0;
-    }, cursorSpeed);
-
-    return cursor;
-}
-
-// Example usage for textTypingReverse
-const optionsReverse = {
+// Example usage
+const options = {
     targetClass: "h1add",
-    speed: 1200,
-    delay: 4000
+    text: "B2B & Full Stack Marketing agency Digital Advertising Web Development Application Development",
+    delay: 80,
+    cursorSpeed: 900
 };
-/* textTypingReverse(optionsReverse); */
 
-// Example usage for textTypingWithCursor
-const optionsWithCursor = {
-    targetClass: "h1add",
-    totalDuration: 4000, // Set the total duration in milliseconds
-    delay: 2000,
-    cursorSpeed: 900 // Set the cursor speed in milliseconds
-};
-const optionsWithCursor1 = {
-    targetClass: "lead",
-    totalDuration: 4000, // Set the total duration in milliseconds
-    delay: 2000,
-    cursorSpeed: 900 // Set the cursor speed in milliseconds
-};
-const optionsWithCursor2 = {
+const options2 = {
     targetClass: "display-1",
-    totalDuration: 4000, // Set the total duration in milliseconds
-    delay: 2000,
-    cursorSpeed: 900 // Set the cursor speed in milliseconds
+    text: "We can build whathever is on your mind",
+    delay: 110,
+    cursorSpeed: 900
 };
-const optionsWithCursor3 = {
-    targetClass: "lead3",
-    totalDuration: 4000, // Set the total duration in milliseconds
-    delay: 2000,
-    cursorSpeed: 900 // Set the cursor speed in milliseconds
+const options3 = {
+    targetClass: "lead",
+    text: "Lugo is a creative agency from Belgrade that creates authentic and innovative content for the market. We work with renowned local, regional and global clients. We specialize in creating campaigns, branding, website and application development. Contact us if you are looking for a second opinion or guidance for your brand.",
+    delay: 20,
+    cursorSpeed: 900
 };
-const optionsWithCursor4 = {
-    targetClass: "display-4",
-    totalDuration: 4000, // Set the total duration in milliseconds
-    delay: 2000,
-    cursorSpeed: 900 // Set the cursor speed in milliseconds
-};
-const optionsWithCursor5 = {
+const options4 = {
     targetClass: "display-2",
-    totalDuration: 4000, // Set the total duration in milliseconds
-    delay: 2000,
-    cursorSpeed: 900 // Set the cursor speed in milliseconds
+    text: "Projects",
+    delay: 200,
+    cursorSpeed: 900
 };
-textTypingWithCursor(optionsWithCursor);
-textTypingWithCursor(optionsWithCursor1);
-textTypingWithCursor(optionsWithCursor2);
-textTypingWithCursor(optionsWithCursor3);
-textTypingWithCursor(optionsWithCursor4);
-textTypingWithCursor(optionsWithCursor5);
+
+const options6 = {
+    targetClass: "display-4",
+    text: "Feel free to contact us for any project idea or collaboration",
+    delay: 50,
+    cursorSpeed: 900
+};
+const options7 = {
+    targetClass: "lead4",
+    text: "Moreover, we excel in crafting engaging website designs, developing innovative applications, and creating seamless e-commerce experiences. Our dedicated team combines technical expertise with creative flair to ensure that your online presence is not only impactful but also functional. Elevate your business to new heights by partnering with Lugo – contact us today for a personalized consultation tailored to your specific goals.",
+    delay: 10,
+    cursorSpeed: 900
+};
+
+const options8 = {
+    targetClass: "lead3",
+    text: "Welcome to Lugo, your all-in-one solution for digital success. From tailored marketing strategies to web development, branding, video production, and social media management, we've got your digital needs covered. Whether you're looking to boost online visibility with SEO, accelerate growth through PPC advertising, or create a compelling brand identity, we're here to elevate your business. Let's work together to achieve your goals – contact us for a personalized consultation today.",
+    delay: 10,
+    cursorSpeed: 900
+};
+
+// Start observing the target elements
+dynamicTextTyping(options);
+dynamicTextTyping(options2);
+dynamicTextTyping(options3);
+dynamicTextTyping(options4);
+
+dynamicTextTyping(options6);
+
+dynamicTextTyping(options8);
