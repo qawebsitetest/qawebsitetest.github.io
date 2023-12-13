@@ -336,7 +336,7 @@ p.lead4 {
   }
   .service-title {
     font-weight: 100;
-    font-size: 6rem;
+    font-size: 5.8rem;
     line-height: 0.9;
     letter-spacing: 1px;
   }
@@ -1930,7 +1930,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 400px) {
   .display-1 {
-    font-size: 8.4rem;
+    font-size: 7.4rem;
   }
 
   .subhead {
@@ -2628,6 +2628,7 @@ var .s-home .grid-overlay > div {
 .spin-letter {
   display: inline-block;
   animation: spin 2.3s linear infinite; /* Adjust the animation duration as needed */
+  height: 96px;
 }
 
 @keyframes spin {
@@ -2781,6 +2782,9 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 1600px) {
   .home-content h1 {
     font-size: 9rem;
+  }
+  .spin-letter {
+    height: 60px;
   }
   .site-logo {
     font-size: 4rem;
@@ -3083,8 +3087,13 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 350px) {
   .home-content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
+}
+.home-content h1 {
+  line-height: 0.9;
+  letter-spacing: 1px;
+  font-weight: 100;
 }
 
 /* ===================================================================
