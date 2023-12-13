@@ -108,7 +108,7 @@ const optionsWithCursor8 = {
 
 // Example usage:
 /* dynamicTextTypingReverseWithObserver(options1); */
-dynamicTextTypingReverseWithObserver(optionsWithCursor);
+/* dynamicTextTypingReverseWithObserver(optionsWithCursor);
 dynamicTextTypingReverseWithObserver(optionsWithCursor1);
 dynamicTextTypingReverseWithObserver(optionsWithCursor2);
 dynamicTextTypingReverseWithObserver(optionsWithCursor3);
@@ -116,7 +116,7 @@ dynamicTextTypingReverseWithObserver(optionsWithCursor4);
 dynamicTextTypingReverseWithObserver(optionsWithCursor5);
 dynamicTextTypingReverseWithObserver(optionsWithCursor6);
 dynamicTextTypingReverseWithObserver(optionsWithCursor7);
-dynamicTextTypingReverseWithObserver(optionsWithCursor8);
+dynamicTextTypingReverseWithObserver(optionsWithCursor8); */
 
 
 // Example usage:
