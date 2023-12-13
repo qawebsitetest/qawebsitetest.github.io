@@ -1743,7 +1743,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 1100px) {
   .display-1 {
-    font-size: 4.2rem;
+    font-size: 9.2rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1759,7 +1759,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 1000px) {
   .display-1 {
-    font-size: 4rem;
+    font-size: 7.2rem;
   }
   .home-content-container {
     flex-direction: column;
@@ -1789,7 +1789,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 960px) {
   .display-1 {
-    font-size: 4rem;
+    font-size: 7.2rem;
   }
   .home-content-container {
     flex-direction: column;
@@ -1821,7 +1821,7 @@ body.menu-is-open {
 }
 @media only screen and (max-width: 700px) {
   .display-1 {
-    font-size: 4rem;
+    font-size: 7.2rem;
   }
   .masonry__brick {
     height: 390px;
@@ -1858,7 +1858,7 @@ body.menu-is-open {
 }
 @media only screen and (max-width: 600px) {
   .display-1 {
-    font-size: 4rem;
+    font-size: 7.2rem;
   }
   .home-content-container {
     flex-direction: column;
@@ -1888,7 +1888,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 800px) {
   .display-1 {
-    font-size: 3.6rem;
+    font-size: 7.2rem;
     margin-bottom: 4.5rem;
   }
 
@@ -1903,7 +1903,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 700px) {
   .display-1 {
-    font-size: 3.2rem;
+    font-size: 7.2rem;
   }
 
   .subhead {
@@ -1913,14 +1913,14 @@ body.menu-is-open {
 
 @media only screen and (max-width: 600px) {
   .display-1 {
-    font-size: 2.8rem;
+    font-size: 7.4rem;
     margin-bottom: 4.2rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .display-1 {
-    font-size: 2.6rem;
+    font-size: 7.4rem;
   }
 
   .section-header.has-bottom-sep::before {
@@ -2813,7 +2813,9 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (min-width: 801px) and (max-width: 1100px) {
   .service-title {
-    font-size: 5rem;
+    font-size: 7rem;
+    font-size: 7rem;
+    font-weight: 100;
   }
 }
 
