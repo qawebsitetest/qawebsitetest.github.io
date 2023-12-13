@@ -95,11 +95,20 @@ a {
 :root {
   --main-bg-color: #d39b59;
 }
-
+/* 
 @font-face {
   font-family: "Amatis-font";
   src: url("/fonts/Ubuntu-Regular.ttf") format("truetype");
-  /* Add more formats if necessary */
+  
+  font-weight: normal;
+  font-style: normal;
+}
+ */
+@font-face {
+  font-family: "Amatis-font";
+  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Regular.otf")
+    format("opentype");
+
   font-weight: normal;
   font-style: normal;
 }
@@ -143,6 +152,10 @@ h6,
 }
 .p-crevo {
   color: #da3c22;
+}
+
+.font-weight {
+  font-weight: 100;
 }
 h1,
 .h1,
@@ -2597,6 +2610,7 @@ var .s-home .grid-overlay > div {
 .spin-letter {
   display: inline-block;
   animation: spin 2.3s linear infinite; /* Adjust the animation duration as needed */
+  height: 96px;
 }
 
 @keyframes spin {
@@ -2750,6 +2764,9 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 1600px) {
   .home-content h1 {
     font-size: 9rem;
+  }
+  .spin-letter {
+    height: 60px;
   }
   .site-logo {
     font-size: 4rem;
