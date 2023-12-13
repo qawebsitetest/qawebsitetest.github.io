@@ -308,6 +308,10 @@ p.lead4 {
   p.lead {
     font-size: 1.5rem;
   }
+  .sub-title {
+    min-height: 314px;
+    display: inline-block;
+  }
   .item-process__text p {
     font-size: 15px;
   }
@@ -318,13 +322,13 @@ p.lead4 {
     font-size: 1.5rem;
   }
   .item-process1 {
-    min-height: 358px;
+    min-height: 539px;
   }
   .item-process2 {
     min-height: 305px;
   }
   .item-process3 {
-    min-height: 160px;
+    min-height: 356px;
   }
   .item-process4 {
     min-height: 60px;
@@ -2980,7 +2984,7 @@ html.no-csstransitions .home-content__main {
     width: 22rem;
   }
   .home-content__main {
-    min-height: 240px;
+    min-height: 382px;
   }
 }
 
