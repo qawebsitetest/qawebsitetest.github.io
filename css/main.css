@@ -1738,7 +1738,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 1200px) {
   .display-1 {
-    font-size: 4.5rem;
+    font-size: 9.5rem;
   }
 
   .display-1 br {
@@ -1763,11 +1763,14 @@ body.menu-is-open {
   .asset-img-div {
     height: 191px;
   }
+  .display-1 {
+    font-size: 9.2rem;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   .display-1 {
-    font-size: 7.2rem;
+    font-size: 8.2rem;
   }
   .home-content-container {
     flex-direction: column;
@@ -2802,15 +2805,18 @@ html.no-csstransitions .home-content__main {
     font-size: 3.7rem;
   }
   .smoothscroll {
-    font-size: 6rem;
+    font-size: 3.8rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .smoothscroll {
-    font-size: 9rem;
+    font-size: 6rem;
   }
   .home-content h1 {
     font-size: 10rem;
+  }
+  .display-1 {
+    font-size: 9.2rem;
   }
 }
 @media only screen and (min-width: 1101px) {
@@ -2832,7 +2838,7 @@ html.no-csstransitions .home-content__main {
     font-size: 8rem;
   }
   .smoothscroll {
-    font-size: 5.5rem;
+    font-size: 4rem;
   }
 
   .home-content h3 {
