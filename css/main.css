@@ -124,6 +124,21 @@ a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Ubuntu-font";
+  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Bold.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu-font";
+  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
+    format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
 body {
   font-family: "Ubuntu-font";
   /* Use the font-family in your styles */
@@ -386,18 +401,18 @@ blockquote {
  * ------------------------------------------------------------------- */
 .home-content-container {
   display: flex;
-  margin-top: 10rem;
+  margin-top: 14rem;
 }
 
 .home-content-project {
-  width: 30%;
+  width: 40%;
 }
 
 .home-content-assets {
   display: flex;
   flex-wrap: wrap;
   gap: 2.4rem;
-  width: 70%;
+  width: 60%;
 }
 .asset-item {
   flex: 0 1 calc(33.33% - 2rem);
@@ -1774,7 +1789,7 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1804,7 +1819,7 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1844,7 +1859,7 @@ body.menu-is-open {
     width: 100%;
   }
   .home-content-container {
-    margin-top: 6rem;
+    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1873,7 +1888,7 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;

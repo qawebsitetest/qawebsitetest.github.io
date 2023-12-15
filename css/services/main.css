@@ -66,9 +66,6 @@ html {
   html {
     font-size: 9.411764705882353px;
   }
-  .service-header {
-    width: 17%;
-  }
 }
 
 html,
@@ -79,7 +76,6 @@ body {
 }
 
 body {
-  overflow-x: hidden;
   background: var(--main-bg-color);
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.7rem;
@@ -123,6 +119,7 @@ a {
   font-family: "Ubuntu-font";
   src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Regular.otf")
     format("opentype");
+
   font-weight: normal;
   font-style: normal;
 }
@@ -134,13 +131,17 @@ a {
   font-weight: bold;
   font-style: normal;
 }
+/* @font-face {
+  font-family: "Ubuntu-font";
+  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
+    format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+} */
 
 body {
   font-family: "Ubuntu-font";
   /* Use the font-family in your styles */
-}
-.service-header {
-  z-index: 30;
 }
 
 a:hover,
@@ -225,19 +226,6 @@ h1,
   line-height: 1.25;
   letter-spacing: -0.1rem;
 }
-.home-content {
-  position: relative;
-}
-
-#background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire container */
-  z-index: -1; /* Place the video behind other content */
-}
 
 @media only screen and (max-width: 600px) {
   h1,
@@ -316,9 +304,6 @@ p.lead4 {
   }
   p.lead4 {
     font-size: 1.8rem;
-  }
-  .display-service {
-    font-size: 18rem;
   }
 }
 
@@ -416,36 +401,28 @@ blockquote {
  * ------------------------------------------------------------------- */
 .home-content-container {
   display: flex;
-  margin-top: 10rem;
+  margin-top: 14rem;
 }
 
 .home-content-project {
-  width: 30%;
+  width: 40%;
 }
 
 .home-content-assets {
   display: flex;
   flex-wrap: wrap;
   gap: 2.4rem;
-  width: 70%;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #091020;
-  opacity: 0.3;
-  z-index: 0; /* Adjust the z-index as needed */
+  width: 60%;
 }
 .asset-item {
-  flex: 0 1 calc(33.33% - 2rem);
+  width: 100%;
+}
+.service-titles {
+  margin-top: 0px;
+  font-weight: 100;
+  font-size: 5rem;
 }
 .portfolio {
-  overflow: hidden;
-  display: flex;
-  justify-content: end;
   margin-top: 8rem;
 }
 .project-text {
@@ -466,6 +443,7 @@ blockquote {
 }
 .asset-span {
   margin-top: 1.5rem;
+  font-size: 2rem;
   display: inline-block;
   line-height: 1.1;
   color: white;
@@ -601,12 +579,6 @@ ul {
 
 ul li {
   padding-left: 0.4rem;
-}
-.service-header {
-  text-align: center;
-  overflow: hidden;
-  height: 90vh;
-  width: 20%;
 }
 
 ul ul,
@@ -1823,7 +1795,7 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1851,7 +1823,15 @@ body.menu-is-open {
   .display-1 {
     font-size: 7.2rem;
   }
-
+  .home-content-container {
+    flex-direction: column;
+    margin-top: 12rem;
+  }
+  .home-content-assets {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
   .asset-item {
     width: 100%;
     height: 100%;
@@ -1885,7 +1865,7 @@ body.menu-is-open {
     width: 100%;
   }
   .home-content-container {
-    margin-top: 6rem;
+    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1914,7 +1894,7 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1951,15 +1931,6 @@ body.menu-is-open {
   .section-header.has-bottom-sep::before {
     width: 300px;
   }
-
-  .service-header {
-    width: 9%;
-  }
-  .service-header .display-service {
-    margin-top: 2rem;
-    font-weight: bold;
-    font-size: 8rem;
-  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1970,28 +1941,12 @@ body.menu-is-open {
   .subhead {
     font-size: 1.5rem;
   }
-  .service-header {
-    width: 12%;
-  }
-  .service-header .display-service {
-    margin-top: 2rem;
-    font-weight: bold;
-    font-size: 8rem;
-  }
 }
 
 @media only screen and (max-width: 600px) {
   .display-1 {
     font-size: 7.4rem;
     margin-bottom: 4.2rem;
-  }
-  .service-header {
-    width: 14%;
-  }
-  .service-header .display-service {
-    margin-top: 2rem;
-    font-weight: bold;
-    font-size: 8rem;
   }
 }
 
@@ -2008,14 +1963,6 @@ body.menu-is-open {
 @media only screen and (max-width: 400px) {
   .display-1 {
     font-size: 7.4rem;
-  }
-  .service-header {
-    width: 16%;
-  }
-  .service-header .display-service {
-    margin-top: 2rem;
-    font-weight: bold;
-    font-size: 8rem;
   }
 
   .subhead {
@@ -2345,26 +2292,8 @@ body.menu-is-open {
     left: 60px;
   }
 
-  .service-header .header-menu-toggle {
+  .header-menu-toggle {
     right: 60px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .service-header {
-    height: auto;
-    width: 100%;
-  }
-  .portfolio {
-    height: 60%;
-    width: 100%;
-    flex-direction: column;
-    justify-content: end;
-    justify-items: center;
-  }
-  .display-service {
-    margin-top: 1rem;
-    font-weight: bold;
-    font-size: 20rem;
   }
 }
 
@@ -2387,24 +2316,6 @@ body.menu-is-open {
 
   .header-nav__list li {
     padding: 0.6rem 0;
-  }
-}
-@media only screen and (min-width: 801px) {
-  .service-header {
-    height: auto;
-    width: 100%;
-  }
-  .portfolio {
-    height: 60%;
-    width: 100%;
-    flex-direction: column;
-    justify-content: end;
-    justify-items: center;
-  }
-  .service-header .display-service {
-    margin-top: 2rem;
-    font-weight: bold;
-    font-size: 20rem;
   }
 }
 
