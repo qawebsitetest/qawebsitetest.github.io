@@ -421,13 +421,14 @@ blockquote {
   width: 100%;
 }
 .service-titles {
+  letter-spacing: 1px;
   margin-top: 0px;
   font-weight: 100;
   line-height: 1.1;
   font-size: 5rem;
 }
 .portfolio {
-  margin-top: 8rem;
+  margin-top: 20rem;
 }
 .project-text {
   margin: 8px 0px;
@@ -1818,7 +1819,7 @@ body.menu-is-open {
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 8rem;
+    margin-top: 20rem;
   }
 }
 
@@ -1848,7 +1849,7 @@ body.menu-is-open {
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 8rem;
+    margin-top: 20rem;
   }
 }
 .text-fluid {
@@ -1888,7 +1889,7 @@ body.menu-is-open {
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 8rem;
+    margin-top: 20rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1917,7 +1918,7 @@ body.menu-is-open {
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 8rem;
+    margin-top: 20rem;
   }
 }
 
@@ -1925,6 +1926,29 @@ body.menu-is-open {
   .display-1 {
     font-size: 7.2rem;
     margin-bottom: 4.5rem;
+  }
+  .service-titles {
+    font-size: 5rem;
+  }
+
+  .subhead {
+    font-size: 1.6rem;
+  }
+
+  .section-header.has-bottom-sep::before {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .display-1 {
+    font-size: 7.2rem;
+    margin-bottom: 4.5rem;
+  }
+  .service-titles {
+    font-size: 82px;
+  }
+  .asset-span {
+    font-size: 20px;
   }
 
   .subhead {
