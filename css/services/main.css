@@ -131,13 +131,13 @@ a {
   font-weight: bold;
   font-style: normal;
 }
-/* @font-face {
+@font-face {
   font-family: "Ubuntu-font";
   src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
     format("opentype");
   font-weight: lighter;
   font-style: normal;
-} */
+}
 
 body {
   font-family: "Ubuntu-font";
@@ -148,6 +148,9 @@ a:hover,
 a:focus,
 a:active {
   color: #ffffff;
+}
+li {
+  list-style: none;
 }
 
 a:hover,
@@ -420,6 +423,7 @@ blockquote {
 .service-titles {
   margin-top: 0px;
   font-weight: 100;
+  line-height: 1.1;
   font-size: 5rem;
 }
 .portfolio {
@@ -428,6 +432,7 @@ blockquote {
 .project-text {
   margin: 8px 0px;
   font-weight: 100;
+  color: rgba(255, 255, 255, 0.6);
 }
 .font-active {
   font-weight: bolder;
@@ -443,10 +448,10 @@ blockquote {
 }
 .asset-span {
   margin-top: 1.5rem;
-  font-size: 2rem;
+  font-size: 17px;
   display: inline-block;
   line-height: 1.1;
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 blockquote:before {
@@ -572,8 +577,7 @@ li {
   display: list-item;
 }
 
-ol,
-ul {
+ol {
   margin-left: 1.7rem;
 }
 
@@ -712,7 +716,6 @@ blockquote,
 figure,
 table,
 p,
-ul,
 ol,
 dl,
 form,
