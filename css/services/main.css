@@ -79,6 +79,7 @@ body {
 }
 
 body {
+  overflow-x: hidden;
   background: var(--main-bg-color);
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.7rem;
@@ -130,6 +131,9 @@ a {
 body {
   font-family: "Ubuntu-font";
   /* Use the font-family in your styles */
+}
+.service-header {
+  z-index: 30;
 }
 
 a:hover,
@@ -305,6 +309,9 @@ p.lead4 {
   }
   p.lead4 {
     font-size: 1.8rem;
+  }
+  .display-service {
+    font-size: 18rem;
   }
 }
 
@@ -1837,15 +1844,7 @@ body.menu-is-open {
   .display-1 {
     font-size: 7.2rem;
   }
-  .home-content-container {
-    flex-direction: column;
-    margin-top: 6rem;
-  }
-  .home-content-assets {
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-  }
+
   .asset-item {
     width: 100%;
     height: 100%;
@@ -1945,14 +1944,7 @@ body.menu-is-open {
   .section-header.has-bottom-sep::before {
     width: 300px;
   }
-  .service-header {
-    width: 13%;
-  }
-  .service-header .display-service {
-    margin-top: 2rem;
-    font-weight: bold;
-    font-size: 8rem;
-  }
+
   .service-header {
     width: 9%;
   }
@@ -1987,7 +1979,7 @@ body.menu-is-open {
     margin-bottom: 4.2rem;
   }
   .service-header {
-    width: 12%;
+    width: 14%;
   }
   .service-header .display-service {
     margin-top: 2rem;
@@ -2346,8 +2338,26 @@ body.menu-is-open {
     left: 60px;
   }
 
-  .header-menu-toggle {
+  .service-header .header-menu-toggle {
     right: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .service-header {
+    height: auto;
+    width: 100%;
+  }
+  .portfolio {
+    height: 60%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: end;
+    justify-items: center;
+  }
+  .display-service {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 20rem;
   }
 }
 
@@ -2370,6 +2380,24 @@ body.menu-is-open {
 
   .header-nav__list li {
     padding: 0.6rem 0;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .service-header {
+    height: auto;
+    width: 100%;
+  }
+  .portfolio {
+    height: 60%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: end;
+    justify-items: center;
+  }
+  .service-header .display-service {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 20rem;
   }
 }
 
