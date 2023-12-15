@@ -1951,12 +1951,6 @@ body.menu-is-open {
   .item-title {
     font-size: 2.1rem;
   }
-
-  .grid-overlay > div,
-  .grid-overlay::before,
-  .grid-overlay::after {
-    display: none;
-  }
 }
 
 /* ===================================================================
