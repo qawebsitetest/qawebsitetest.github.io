@@ -123,8 +123,15 @@ a {
   font-family: "Ubuntu-font";
   src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Regular.otf")
     format("opentype");
-
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu-font";
+  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Bold.otf")
+    format("opentype");
+  font-weight: bold;
   font-style: normal;
 }
 
