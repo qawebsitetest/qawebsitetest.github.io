@@ -756,7 +756,7 @@ h1 {
   letter-spacing: 1px;
 }
 .header-nav__list a {
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 .no-js #preloader,
@@ -1789,7 +1789,7 @@ body.menu-is-open {
   }
 }
 .display-2 {
-  font-size: 5.6rem;
+  font-size: 8rem;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1944,6 +1944,9 @@ body.menu-is-open {
   .display-1 {
     font-size: 7.2rem;
     margin-bottom: 4.5rem;
+  }
+  .display-2 {
+    font-size: 6rem;
   }
   .service-heading2 {
     height: auto;
@@ -2131,8 +2134,8 @@ body.menu-is-open {
 }
 
 .header-nav__list {
-  font-family: "Ubuntu-font", sans-serif;
-  font-weight: 600;
+  font-family: "Ubuntu-font2", sans-serif;
+  font-weight: 100;
   font-size: 2.8rem;
   line-height: 1.286;
   margin: 0 0 4.2rem 0;
@@ -2392,7 +2395,7 @@ body.menu-is-open {
     height: 35px;
   }
   .smoothscroll {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .header-nav {
@@ -2854,7 +2857,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (min-width: 1600px) {
   .smoothscroll {
-    font-size: 6rem;
+    font-size: 8rem;
   }
   .home-content h1 {
     font-size: 10rem;
@@ -2882,7 +2885,7 @@ html.no-csstransitions .home-content__main {
     font-size: 8rem;
   }
   .smoothscroll {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .home-content h3 {
@@ -2958,7 +2961,7 @@ html.no-csstransitions .home-content__main {
     font-size: 6rem;
   }
   .smoothscroll {
-    font-size: 6rem;
+    font-size: 7rem;
   }
   .home-content1 h1 {
     font-size: 5rem;
@@ -2990,7 +2993,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.7rem;
   }
   .smoothscroll {
-    font-size: 4rem;
+    font-size: 7rem;
   }
 
   .home-social {
@@ -3052,7 +3055,7 @@ html.no-csstransitions .home-content__main {
     bottom: 4.8rem;
   }
   .smoothscroll {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .home-content__scroll::after {
@@ -3115,7 +3118,7 @@ html.no-csstransitions .home-content__main {
     font-size: 4rem;
   }
   .smoothscroll {
-    font-size: 4rem;
+    font-size: 7rem;
   }
 
   .home-content h1 {
