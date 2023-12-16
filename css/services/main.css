@@ -132,7 +132,7 @@ a {
   font-style: normal;
 }
 @font-face {
-  font-family: "Ubuntu-font";
+  font-family: "Ubuntu-font2";
   src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
     format("opentype");
   font-weight: lighter;
@@ -374,6 +374,9 @@ strong,
 b {
   font-size: inherit;
   line-height: inherit;
+}
+.font2 {
+  font-family: "Ubuntu-font2";
 }
 
 em,

@@ -131,12 +131,17 @@ a {
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Ubuntu-font";
+  font-family: "Ubuntu-font2";
   src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
     format("opentype");
   font-weight: lighter;
   font-style: normal;
+}
+
+.font2 {
+  font-family: "Ubuntu-font2";
 }
 
 body {
@@ -272,20 +277,20 @@ p img {
 }
 
 p.lead {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Ubuntu-font2", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.625;
   margin-bottom: 3.6rem;
 }
 p.lead3 {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Ubuntu-font2", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.625;
 }
 p.lead4 {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Ubuntu-font2", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.625;
@@ -319,6 +324,15 @@ p.lead4 {
   }
 }
 
+.item-process33 {
+  height: 100%;
+  width: 100%;
+}
+.item-process__text {
+  height: 100%;
+  width: 100%;
+}
+
 @media only screen and (max-width: 800px) {
   p.lead {
     font-size: 1.5rem;
@@ -345,6 +359,7 @@ p.lead4 {
   .item-process3 {
     min-height: 356px;
   }
+
   .item-process4 {
     min-height: 60px;
   }
@@ -748,6 +763,12 @@ h1 {
 .oldie #preloader {
   display: none;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+.line-height {
+  line-height: 1.625;
+}
 .grey-text {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -763,7 +784,14 @@ h1 {
   letter-spacing: 1px;
 }
 .about-process2 {
+  flex-direction: column;
   display: flex;
+}
+.service-heading2 {
+  height: 800px;
+}
+.hp-img {
+  margin-top: 40rem;
 }
 .text-fluid2 {
   width: 100%;
@@ -1917,6 +1945,12 @@ body.menu-is-open {
     font-size: 7.2rem;
     margin-bottom: 4.5rem;
   }
+  .service-heading2 {
+    height: auto;
+  }
+  .hp-img {
+    margin-top: 0px;
+  }
 
   .subhead {
     font-size: 1.6rem;
@@ -2470,6 +2504,7 @@ var .s-home .grid-overlay > div {
   text-align: left;
 }
 .text-fluid2 p {
+  font-family: "Ubuntu-font2";
   margin-bottom: 0;
 }
 
@@ -2830,7 +2865,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (min-width: 1101px) {
   .service-title {
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 100;
   }
 }
