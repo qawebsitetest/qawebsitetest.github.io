@@ -446,14 +446,10 @@ blockquote {
   font-weight: bolder;
   font-size: 2.3rem;
 }
+.portfolio-desc {
+  font-size: 2.8rem;
+}
 
-.asset-img {
-  width: 100%;
-  height: 100%;
-}
-.asset-img-div {
-  height: auto;
-}
 .asset-span {
   font-family: "Ubuntu-font2";
   font-weight: 100;
@@ -462,7 +458,9 @@ blockquote {
   line-height: 1.1;
   color: white;
 }
-
+.letter-space-0 {
+  letter-spacing: 0;
+}
 blockquote:before {
   content: "\201C";
   font-size: 10rem;
