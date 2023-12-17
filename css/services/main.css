@@ -1640,6 +1640,9 @@ body.menu-is-open {
 .darker {
   background-color: #0f0f0f;
 }
+.display {
+  min-height: 135px;
+}
 
 /* ------------------------------------------------------------------- 
  * ## display headings
@@ -1652,6 +1655,9 @@ body.menu-is-open {
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 4.8rem;
+}
+.display-4 {
+  font-weight: 100;
 }
 
 .subhead {
@@ -2398,7 +2404,7 @@ body.menu-is-open {
     height: 35px;
   }
   .smoothscroll {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .header-nav {
@@ -2854,7 +2860,7 @@ html.no-csstransitions .home-content__main {
     font-size: 3.7rem;
   }
   .smoothscroll {
-    font-size: 3.8rem;
+    font-size: 8rem;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -2963,7 +2969,7 @@ html.no-csstransitions .home-content__main {
     font-size: 8rem;
   }
   .smoothscroll {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .home-content1 h1 {
     font-size: 5rem;
@@ -2995,7 +3001,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.7rem;
   }
   .smoothscroll {
-    font-size: 4rem;
+    font-size: 5.5rem;
   }
 
   .home-social {
@@ -3057,7 +3063,7 @@ html.no-csstransitions .home-content__main {
     bottom: 4.8rem;
   }
   .smoothscroll {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .home-content__scroll::after {
@@ -3117,9 +3123,6 @@ html.no-csstransitions .home-content__main {
     min-height: 630px;
   }
   .site-logo {
-    font-size: 4rem;
-  }
-  .smoothscroll {
     font-size: 4rem;
   }
 

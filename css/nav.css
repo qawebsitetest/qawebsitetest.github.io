@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Ubuntu-font2";
+  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
+    format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+.header-nav__list a {
+  letter-spacing: 3px;
+}
+
+.smoothscroll {
+  letter-spacing: 3px;
+  font-family: "Ubuntu-font2";
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 1600px) {
+  .smoothscroll {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .smoothscroll {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .smoothscroll {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .smoothscroll {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .smoothscroll {
+    font-size: 5.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .smoothscroll {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .smoothscroll {
+    font-size: 7rem;
+  }
+}

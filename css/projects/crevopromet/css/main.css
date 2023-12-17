@@ -59,7 +59,6 @@
  * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
-  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 400px) {
@@ -70,9 +69,8 @@ html {
 
 html,
 body {
-  scroll-behavior: smooth;
   height: 100%;
-  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 body {
@@ -98,25 +96,20 @@ a {
 :root {
   --main-bg-color: #091020;
 }
+.font-weight {
+  font-weight: 100;
+}
 
 /* @font-face {
-  font-family: "Ubuntu-font";
+  font-family: "Amatis-font";
   src: url("/fonts/Ubuntu-Regular.ttf") format("truetype");
-
+  
   font-weight: normal;
   font-style: normal;
 } */
 
-/*  @font-face {
-  font-family: "Ubuntu-font";
-  src: url("/fonts/Ubuntu-Regular.ttf") format("truetype");
-
-  font-weight: normal;
-  font-style: normal;
-}  */
-
 @font-face {
-  font-family: "Ubuntu-font";
+  font-family: "Amatis-font";
   src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Regular.otf")
     format("opentype");
 
@@ -124,31 +117,8 @@ a {
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Ubuntu-font";
-  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Bold.otf")
-    format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Ubuntu-font2";
-  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
-    format("opentype");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-.font2 {
-  font-family: "Ubuntu-font2";
-}
-.font-100 {
-  font-weight: 100;
-}
-
 body {
-  font-family: "Ubuntu-font";
+  font-family: "Amatis-font";
   /* Use the font-family in your styles */
 }
 
@@ -179,12 +149,14 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-weight: 600;
   color: #ffffff;
   text-rendering: optimizeLegibility;
 }
-
+.p-crevo {
+  color: #da3c22;
+}
 h1,
 .h1,
 h2,
@@ -193,8 +165,8 @@ h3,
 .h3,
 h4,
 .h4 {
-  margin-top: 6rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -206,7 +178,7 @@ h4,
   .h3,
   h4,
   .h4 {
-    margin-top: 2.3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -245,7 +217,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 2.1rem;
+  font-size: 3rem;
   line-height: 1.3;
 }
 
@@ -280,27 +252,28 @@ p img {
 }
 
 p.lead {
-  font-family: "Ubuntu-font2", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.625;
   margin-bottom: 3.6rem;
 }
 p.lead3 {
-  font-family: "Ubuntu-font2", sans-serif;
-  font-weight: 300;
-  font-size: 1.8rem;
-  line-height: 1.625;
-}
-p.lead4 {
-  font-family: "Ubuntu-font2", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.625;
   margin-bottom: 3.6rem;
 }
-.font-weight {
-  font-weight: 100;
+p.lead4 {
+  font-family: "Amatis-font", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.625;
+  margin-bottom: 3.6rem;
+}
+.border-crevo {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -327,59 +300,15 @@ p.lead4 {
   }
 }
 
-.item-process33 {
-  height: 100%;
-  width: 100%;
-}
-.item-process__text {
-  height: 100%;
-  width: 100%;
-}
-
 @media only screen and (max-width: 800px) {
   p.lead {
     font-size: 1.5rem;
-  }
-  .sub-title {
-    min-height: 314px;
-    display: inline-block;
-  }
-  .item-process__text p {
-    font-size: 15px;
   }
   p.lead3 {
     font-size: 1.5rem;
   }
   p.lead4 {
     font-size: 1.5rem;
-  }
-  .item-process1 {
-    min-height: 539px;
-  }
-  .item-process2 {
-    min-height: 305px;
-  }
-  .item-process3 {
-    min-height: 356px;
-  }
-
-  .item-process4 {
-    min-height: 60px;
-  }
-  .item-process5 {
-    min-height: 90px;
-  }
-  .item-process6 {
-    min-height: 60px;
-  }
-  .about-process2 {
-    flex-direction: column;
-  }
-  .service-title {
-    font-weight: 100;
-    font-size: 6rem;
-    line-height: 0.9;
-    letter-spacing: 1px;
   }
 }
 
@@ -389,6 +318,9 @@ strong,
 b {
   font-size: inherit;
   line-height: inherit;
+}
+.col-block {
+  margin-bottom: 3rem;
 }
 
 em,
@@ -419,18 +351,18 @@ blockquote {
  * ------------------------------------------------------------------- */
 .home-content-container {
   display: flex;
-  margin-top: 14rem;
+  margin-top: 10rem;
 }
 
 .home-content-project {
-  width: 40%;
+  width: 30%;
 }
 
 .home-content-assets {
   display: flex;
   flex-wrap: wrap;
   gap: 2.4rem;
-  width: 60%;
+  width: 70%;
 }
 .asset-item {
   flex: 0 1 calc(33.33% - 2rem);
@@ -483,7 +415,7 @@ blockquote p {
 
 blockquote cite {
   display: block;
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   line-height: 1.5;
@@ -497,6 +429,9 @@ blockquote cite a,
 blockquote cite a:visited {
   color: rgba(255, 255, 255, 0.3);
   border: none;
+}
+.header-nav__list a {
+  letter-spacing: 1px;
 }
 
 abbr {
@@ -730,7 +665,7 @@ dl,
 form,
 .video-container,
 .ss-custom-select {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 /* ===================================================================
@@ -749,59 +684,10 @@ form,
   width: 100%;
   overflow: hidden;
 }
-.p-crevo {
-  font-size: 14px;
-}
-h1 {
-  letter-spacing: 1px;
-}
-#porfolio-h1 {
-  letter-spacing: 1px;
-}
-.header-nav__list a {
-  letter-spacing: 3px;
-}
 
 .no-js #preloader,
 .oldie #preloader {
   display: none;
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.line-height {
-  line-height: 1.625;
-}
-.grey-text {
-  color: rgba(255, 255, 255, 0.3);
-}
-.bottom-border {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin-bottom: 0.6rem;
-}
-.letter-space {
-  letter-spacing: 1px;
-}
-.text-fluid h2,
-.text-fluid p {
-  letter-spacing: 1px;
-}
-.about-process2 {
-  flex-direction: column;
-  display: flex;
-}
-.service-heading2 {
-  height: 800px;
-}
-.hp-img {
-  margin-top: 40rem;
-}
-.text-fluid2 {
-  width: 100%;
-}
-.service-heading {
-  display: flex;
-  align-items: center;
 }
 
 #loader {
@@ -1653,6 +1539,7 @@ body.menu-is-open {
 
 .bit-narrow {
   max-width: 100%;
+  margin-top: 7rem;
 }
 
 .darker {
@@ -1663,17 +1550,17 @@ body.menu-is-open {
  * ## display headings
  * ------------------------------------------------------------------- */
 .display-1 {
-  font-family: "Ubuntu-font", sans-serif;
-  font-weight: 100;
+  font-family: "Amatis-font", sans-serif;
+  font-weight: 600;
   font-size: 4.6rem;
-  line-height: 0.9;
-  letter-spacing: 1px;
+  line-height: 1.5;
+  letter-spacing: -0.03rem;
   margin-top: 0;
   margin-bottom: 4.8rem;
 }
 
 .subhead {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.333;
@@ -1699,6 +1586,14 @@ body.menu-is-open {
   padding-bottom: 1.5rem;
   position: relative;
   text-align: left;
+}
+.section-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section-header > * {
+  flex: 1;
 }
 
 /* .section-header.has-bottom-sep::before {
@@ -1784,7 +1679,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 1200px) {
   .display-1 {
-    font-size: 9.5rem;
+    font-size: 4.5rem;
   }
 
   .display-1 br {
@@ -1792,12 +1687,12 @@ body.menu-is-open {
   }
 }
 .display-2 {
-  font-size: 8rem;
+  font-size: 5.6rem;
 }
 
 @media only screen and (max-width: 1100px) {
   .display-1 {
-    font-size: 9.2rem;
+    font-size: 4.2rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1807,20 +1702,17 @@ body.menu-is-open {
 }
 @media only screen and (max-width: 1600px) {
   .asset-img-div {
-    height: 191px;
-  }
-  .display-1 {
-    font-size: 9.2rem;
+    height: 220px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .display-1 {
-    font-size: 8.2rem;
+    font-size: 4rem;
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 12rem;
+    margin-top: 6rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1846,11 +1738,11 @@ body.menu-is-open {
 
 @media only screen and (max-width: 960px) {
   .display-1 {
-    font-size: 7.2rem;
+    font-size: 4rem;
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 12rem;
+    margin-top: 6rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1876,9 +1768,18 @@ body.menu-is-open {
 .text-fluid {
   width: 50%;
 }
+
 @media only screen and (max-width: 700px) {
   .display-1 {
-    font-size: 7.2rem;
+    font-size: 4rem;
+  }
+  h2,
+  .h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  .section-header {
+    flex-direction: column;
   }
   .masonry__brick {
     height: 390px;
@@ -1890,7 +1791,7 @@ body.menu-is-open {
     width: 100%;
   }
   .home-content-container {
-    margin-top: 12rem;
+    margin-top: 6rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1915,11 +1816,11 @@ body.menu-is-open {
 }
 @media only screen and (max-width: 600px) {
   .display-1 {
-    font-size: 7.2rem;
+    font-size: 4rem;
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 12rem;
+    margin-top: 6rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1945,17 +1846,12 @@ body.menu-is-open {
 
 @media only screen and (max-width: 800px) {
   .display-1 {
-    font-size: 7.2rem;
+    font-size: 3.6rem;
     margin-bottom: 4.5rem;
   }
-  .display-2 {
-    font-size: 6rem;
-  }
-  .service-heading2 {
-    height: auto;
-  }
-  .hp-img {
-    margin-top: 0px;
+  .p-crevo {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 
   .subhead {
@@ -1969,7 +1865,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 700px) {
   .display-1 {
-    font-size: 7.2rem;
+    font-size: 3.2rem;
   }
 
   .subhead {
@@ -1979,14 +1875,14 @@ body.menu-is-open {
 
 @media only screen and (max-width: 600px) {
   .display-1 {
-    font-size: 7.4rem;
+    font-size: 2.8rem;
     margin-bottom: 4.2rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .display-1 {
-    font-size: 7.4rem;
+    font-size: 2.6rem;
   }
 
   .section-header.has-bottom-sep::before {
@@ -1996,7 +1892,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 400px) {
   .display-1 {
-    font-size: 7.4rem;
+    font-size: 2.4rem;
   }
 
   .subhead {
@@ -2005,6 +1901,12 @@ body.menu-is-open {
 
   .item-title {
     font-size: 2.1rem;
+  }
+
+  .grid-overlay > div,
+  .grid-overlay::before,
+  .grid-overlay::after {
+    display: none;
   }
 }
 
@@ -2094,7 +1996,7 @@ body.menu-is-open {
 
 .header-nav h3 {
   display: inline-block;
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
@@ -2137,8 +2039,8 @@ body.menu-is-open {
 }
 
 .header-nav__list {
-  font-family: "Ubuntu-font2", sans-serif;
-  font-weight: 100;
+  font-family: "Amatis-font", sans-serif;
+  font-weight: 600;
   font-size: 2.8rem;
   line-height: 1.286;
   margin: 0 0 4.2rem 0;
@@ -2161,7 +2063,7 @@ body.menu-is-open {
   display: block;
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-size: 11px;
   color: #141a28;
   -webkit-transition: all 0.5s ease-in-out;
@@ -2273,7 +2175,7 @@ body.menu-is-open {
   width: 48px;
   height: 45px;
   line-height: 45px;
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-weight: 600;
   font-size: 13px;
   text-transform: uppercase;
@@ -2398,7 +2300,7 @@ body.menu-is-open {
     height: 35px;
   }
   .smoothscroll {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
   .header-nav {
@@ -2429,8 +2331,8 @@ body.menu-is-open {
  * ------------------------------------------------------------------- */
 .s-home {
   width: 100%;
-  height: 100vh;
-  min-height: 786px;
+
+  min-height: 100vh;
   background-color: var(--main-bg-color);
   position: relative;
   display: table;
@@ -2452,9 +2354,31 @@ var .s-home .grid-overlay > div {
   vertical-align: middle;
   padding-top: 6.6rem;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
   z-index: 4;
+  background-image: url("../../../../images/projects/crevopromet/nick-karvounis-M1ww_Evl45w-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    218,
+    60,
+    34,
+    0.3
+  ); /* Adjust the opacity value as needed */
+  z-index: -1; /* Place the overlay behind the background image */
 }
 .home-content1 {
   display: table-cell;
@@ -2475,9 +2399,9 @@ var .s-home .grid-overlay > div {
 }
 
 .home-content h1 {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 10rem;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #ffffff;
@@ -2485,7 +2409,7 @@ var .s-home .grid-overlay > div {
   margin-bottom: 0;
 }
 .home-content1 h1 {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-weight: 700;
   font-size: 10rem;
   line-height: 1;
@@ -2507,11 +2431,7 @@ var .s-home .grid-overlay > div {
 
 .home-content__main {
   position: relative;
-  text-align: left;
-}
-.text-fluid2 p {
-  font-family: "Ubuntu-font2";
-  margin-bottom: 0;
+  text-align: center;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2855,40 +2775,21 @@ html.no-csstransitions .home-content__main {
     font-size: 3.7rem;
   }
   .smoothscroll {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .smoothscroll {
-    font-size: 8rem;
-  }
-  .home-content h1 {
-    font-size: 10rem;
-  }
-  .display-1 {
-    font-size: 9.2rem;
-  }
-}
-@media only screen and (min-width: 1101px) {
-  .service-title {
-    font-size: 8rem;
-    font-weight: 100;
-  }
-}
-@media only screen and (min-width: 801px) and (max-width: 1100px) {
-  .service-title {
-    font-size: 7rem;
-    font-size: 7rem;
-    font-weight: 100;
+    font-size: 6rem;
   }
 }
 
 @media only screen and (max-width: 1400px) {
   .home-content h1 {
-    font-size: 8rem;
+    font-size: 9rem;
   }
   .smoothscroll {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
 
   .home-content h3 {
@@ -2908,7 +2809,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h1 {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 
   .home-content h3 {
@@ -2964,7 +2865,7 @@ html.no-csstransitions .home-content__main {
     font-size: 6rem;
   }
   .smoothscroll {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .home-content1 h1 {
     font-size: 5rem;
@@ -2996,7 +2897,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.7rem;
   }
   .smoothscroll {
-    font-size: 5.5rem;
+    font-size: 4rem;
   }
 
   .home-social {
@@ -3039,9 +2940,6 @@ html.no-csstransitions .home-content__main {
   .home-content__button .btn {
     width: 22rem;
   }
-  .home-content__main {
-    min-height: 382px;
-  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -3058,7 +2956,7 @@ html.no-csstransitions .home-content__main {
     bottom: 4.8rem;
   }
   .smoothscroll {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
   .home-content__scroll::after {
@@ -3115,17 +3013,17 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 400px) {
   .s-home {
-    min-height: 630px;
+    min-height: 100vh;
   }
   .site-logo {
     font-size: 4rem;
   }
   .smoothscroll {
-    font-size: 7rem;
+    font-size: 4rem;
   }
 
   .home-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .home-content__main {
@@ -3153,13 +3051,8 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 350px) {
   .home-content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
-}
-.home-content h1 {
-  line-height: 0.9;
-  letter-spacing: 1px;
-  font-weight: 100;
 }
 
 /* ===================================================================
@@ -3201,7 +3094,7 @@ html.no-csstransitions .home-content__main {
 
 .item-process {
   position: relative;
-  /* min-height: 24.6rem; */
+  min-height: 24.6rem;
   margin-bottom: 3rem;
 }
 
@@ -3234,12 +3127,13 @@ html.no-csstransitions .home-content__main {
 
   .item-process:nth-child(n) {
     padding: 0 15px;
+    min-height: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .s-about {
-    padding-top: 12rem;
+    padding-top: 3rem;
   }
   .image-div {
     margin-top: 0;
@@ -3478,8 +3372,24 @@ html.no-csstransitions .home-content__main {
   transition: all 0.5s ease-in-out;
   z-index: 1;
 }
+@media only screen and (min-width: 701px) {
+  .large-image {
+    display: block;
+  }
+  .small-image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 701px) {
+  .large-image {
+    display: none;
+  }
+  .small-image {
+    display: block;
+  }
+}
 
-/* .item-folio__thumb a::after {
+.item-folio__thumb a::after {
   content: "...";
   font-family: georgia, serif;
   font-size: 2.7rem;
@@ -3502,7 +3412,7 @@ html.no-csstransitions .home-content__main {
   -ms-transform: scale(0.5);
   transform: scale(0.5);
   z-index: 1;
-} */
+}
 
 .item-folio__text {
   position: absolute;
@@ -3888,10 +3798,6 @@ html.no-csstransitions .home-content__main {
   letter-spacing: 0;
 }
 
-.p-crevo {
-  font-size: 14px;
-}
-
 /* ------------------------------------------------------------------- 
  * responsive:
  * testimonials
@@ -4123,6 +4029,9 @@ html.no-csstransitions .home-content__main {
   .contact-main {
     font-size: 2.4rem;
   }
+  .s-home {
+    min-height: 100vh;
+  }
 
   .site-logo {
     font-size: 4rem;
@@ -4219,7 +4128,7 @@ footer a {
   color: #ffffff;
   background-color: #351b48;
   text-align: center;
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Amatis-font", sans-serif;
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
@@ -4298,7 +4207,6 @@ footer a {
     padding: 0 2rem;
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .item-folio {
     height: 700px;
@@ -4314,8 +4222,5 @@ footer a {
     height: 100%;
   }
 }
-html,
-body {
-  scroll-behavior: smooth;
-}
+
 /*# sourceMappingURL=main.css.map */
