@@ -134,7 +134,7 @@ const options8 = {
 };
 
 // Start observing the target elements
-dynamicTextTyping(options);
+/* dynamicTextTyping(options); */
 
 
 dynamicTextTyping(options6);

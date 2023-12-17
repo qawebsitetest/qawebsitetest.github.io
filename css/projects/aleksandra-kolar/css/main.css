@@ -2364,10 +2364,10 @@ var .s-home .grid-overlay > div {
   overflow: hidden;
   position: relative;
   z-index: 4;
-  background-image: url("../../../images/projects/aleksandra-kolar/320624184_3293005674291897_46816\ \(1\).png");
+  background-image: url("../../../../images/projects/aleksandra-kolar/fleur-kaan-GG8i22DQTHw-unsplash.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .home-content::before {
