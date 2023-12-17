@@ -419,7 +419,7 @@ blockquote {
  * ------------------------------------------------------------------- */
 .home-content-container {
   display: flex;
-  margin-top: 14rem;
+  margin-top: 4rem;
 }
 
 .home-content-project {
@@ -436,7 +436,7 @@ blockquote {
   flex: 1 1;
 }
 .portfolio {
-  margin-top: 8rem;
+  margin-top: 16rem;
 }
 .project-text {
   margin: 8px 0px;
@@ -1820,7 +1820,6 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1840,7 +1839,7 @@ body.menu-is-open {
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 8rem;
+    margin-top: 16rem;
   }
 }
 
@@ -1850,7 +1849,6 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1870,7 +1868,7 @@ body.menu-is-open {
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 8rem;
+    margin-top: 16rem;
   }
 }
 .text-fluid {
@@ -1881,7 +1879,7 @@ body.menu-is-open {
     font-size: 7.2rem;
   }
   .masonry__brick {
-    height: 390px;
+    height: 292px;
   }
   .item-folio {
     height: 100%;
@@ -1890,7 +1888,6 @@ body.menu-is-open {
     width: 100%;
   }
   .home-content-container {
-    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1910,7 +1907,7 @@ body.menu-is-open {
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 8rem;
+    margin-top: 16rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1919,7 +1916,6 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 12rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1939,7 +1935,7 @@ body.menu-is-open {
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 8rem;
+    margin-top: 16rem;
   }
 }
 
@@ -3450,7 +3446,7 @@ html.no-csstransitions .home-content__main {
 }
 .item-folio__thumb {
   height: 100%;
-  width: 100%;
+  width: 101%;
 }
 
 .item-folio__thumb img {
