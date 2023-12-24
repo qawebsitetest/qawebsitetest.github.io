@@ -423,6 +423,7 @@ blockquote {
 }
 .home-img {
   height: 100%;
+  width: 100%;
 }
 
 .home-content-project {
@@ -1948,6 +1949,8 @@ body.menu-is-open {
     margin-bottom: 4.5rem;
   }
   .home-img {
+    height: 100%;
+    width: 100%;
   }
   .display-2 {
     font-size: 9rem;
