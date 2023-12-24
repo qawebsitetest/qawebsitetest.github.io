@@ -413,11 +413,16 @@ blockquote {
   padding-left: 4.5rem;
   position: relative;
 }
+.form-control-new {
+  height: 100%;
+  width: 100%;
+}
 /* ===================================================================
  * # Prortfolio
  * 
  * ------------------------------------------------------------------- */
 .home-content-container {
+  flex-direction: row;
   display: flex;
   margin-top: 4rem;
 }
@@ -426,7 +431,9 @@ blockquote {
 }
 
 .home-content-project {
+  flex: 1;
   width: 100%;
+  margin-top: 8rem;
 }
 
 .home-content-assets {
