@@ -131,12 +131,20 @@ a {
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Ubuntu-font2";
   src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
     format("opentype");
   font-weight: lighter;
   font-style: normal;
+}
+
+.font2 {
+  font-family: "Ubuntu-font2";
+}
+.font-100 {
+  font-weight: 100;
 }
 
 body {
@@ -148,9 +156,6 @@ a:hover,
 a:focus,
 a:active {
   color: #ffffff;
-}
-li {
-  list-style: none;
 }
 
 a:hover,
@@ -240,7 +245,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 2.1rem;
+  font-size: 2.9rem;
   line-height: 1.3;
 }
 
@@ -275,20 +280,20 @@ p img {
 }
 
 p.lead {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Ubuntu-font2", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.625;
   margin-bottom: 3.6rem;
 }
 p.lead3 {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Ubuntu-font2", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.625;
 }
 p.lead4 {
-  font-family: "Ubuntu-font", sans-serif;
+  font-family: "Ubuntu-font2", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.625;
@@ -322,6 +327,15 @@ p.lead4 {
   }
 }
 
+.item-process33 {
+  height: 100%;
+  width: 100%;
+}
+.item-process__text {
+  height: 100%;
+  width: 100%;
+}
+
 @media only screen and (max-width: 800px) {
   p.lead {
     font-size: 1.5rem;
@@ -331,10 +345,10 @@ p.lead4 {
     display: inline-block;
   }
   .item-process__text p {
-    font-size: 15px;
+    font-size: 1.7rem;
   }
   p.lead3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   p.lead4 {
     font-size: 1.5rem;
@@ -348,6 +362,7 @@ p.lead4 {
   .item-process3 {
     min-height: 356px;
   }
+
   .item-process4 {
     min-height: 60px;
   }
@@ -374,9 +389,6 @@ strong,
 b {
   font-size: inherit;
   line-height: inherit;
-}
-.font2 {
-  font-family: "Ubuntu-font2";
 }
 
 em,
@@ -407,57 +419,51 @@ blockquote {
  * ------------------------------------------------------------------- */
 .home-content-container {
   display: flex;
-  margin-top: 34rem;
+  margin-top: 4rem;
+}
+.home-img {
+  height: 100%;
 }
 
 .home-content-project {
-  width: 40%;
+  width: 100%;
 }
 
 .home-content-assets {
   display: flex;
   flex-wrap: wrap;
   gap: 2.4rem;
-  width: 60%;
-}
-.asset-item {
   width: 100%;
 }
-.service-titles {
-  letter-spacing: 1px;
-  margin-top: 0px;
-  font-weight: 100;
-  line-height: 1.1;
-  font-size: 5rem;
+.asset-item {
+  flex: 1 1;
 }
 .portfolio {
-  margin-top: 20rem;
+  margin-top: 16rem;
 }
 .project-text {
   margin: 8px 0px;
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.6);
 }
 .font-active {
   font-weight: bolder;
   font-size: 2.3rem;
 }
+.portfolio-desc {
+  font-size: 2.8rem;
+}
 
-.asset-img {
-  width: 100%;
-  height: 100%;
-}
-.asset-img-div {
-  height: 240px;
-}
 .asset-span {
+  font-family: "Ubuntu-font2";
+  font-weight: 100;
   margin-top: 1.5rem;
-  font-size: 17px;
   display: inline-block;
   line-height: 1.1;
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
-
+.letter-space-0 {
+  letter-spacing: 0;
+}
 blockquote:before {
   content: "\201C";
   font-size: 10rem;
@@ -581,7 +587,8 @@ li {
   display: list-item;
 }
 
-ol {
+ol,
+ul {
   margin-left: 1.7rem;
 }
 
@@ -720,6 +727,7 @@ blockquote,
 figure,
 table,
 p,
+ul,
 ol,
 dl,
 form,
@@ -761,6 +769,12 @@ h1 {
 .oldie #preloader {
   display: none;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+.line-height {
+  line-height: 1.625;
+}
 .grey-text {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -776,7 +790,14 @@ h1 {
   letter-spacing: 1px;
 }
 .about-process2 {
+  flex-direction: column;
   display: flex;
+}
+.service-heading2 {
+  height: 800px;
+}
+.hp-img {
+  margin-top: 40rem;
 }
 .text-fluid2 {
   width: 100%;
@@ -1640,9 +1661,6 @@ body.menu-is-open {
 .darker {
   background-color: #0f0f0f;
 }
-.display {
-  min-height: 135px;
-}
 
 /* ------------------------------------------------------------------- 
  * ## display headings
@@ -1655,9 +1673,6 @@ body.menu-is-open {
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 4.8rem;
-}
-.display-4 {
-  font-weight: 100;
 }
 
 .subhead {
@@ -1780,7 +1795,7 @@ body.menu-is-open {
   }
 }
 .display-2 {
-  font-size: 5.6rem;
+  font-size: 18rem;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1790,12 +1805,12 @@ body.menu-is-open {
 }
 @media only screen and (max-width: 1200px) {
   .asset-img-div {
-    height: 197px;
+    height: auto;
   }
 }
 @media only screen and (max-width: 1600px) {
   .asset-img-div {
-    height: 191px;
+    height: auto;
   }
   .display-1 {
     font-size: 9.2rem;
@@ -1808,7 +1823,6 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 27rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1821,14 +1835,14 @@ body.menu-is-open {
   }
 
   .asset-img-div {
-    height: 200px;
+    height: auto;
   }
   .home-content-project {
     width: 100%;
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 20rem;
+    margin-top: 16rem;
   }
 }
 
@@ -1838,7 +1852,6 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 27rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1851,14 +1864,14 @@ body.menu-is-open {
   }
 
   .asset-img-div {
-    height: 200px;
+    height: auto;
   }
   .home-content-project {
     width: 100%;
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 20rem;
+    margin-top: 16rem;
   }
 }
 .text-fluid {
@@ -1869,7 +1882,7 @@ body.menu-is-open {
     font-size: 7.2rem;
   }
   .masonry__brick {
-    height: 390px;
+    height: 292px;
   }
   .item-folio {
     height: 100%;
@@ -1878,7 +1891,6 @@ body.menu-is-open {
     width: 100%;
   }
   .home-content-container {
-    margin-top: 27rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1891,14 +1903,14 @@ body.menu-is-open {
   }
 
   .asset-img-div {
-    height: 200px;
+    height: auto;
   }
   .home-content-project {
     width: 100%;
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 20rem;
+    margin-top: 16rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1907,7 +1919,6 @@ body.menu-is-open {
   }
   .home-content-container {
     flex-direction: column;
-    margin-top: 27rem;
   }
   .home-content-assets {
     width: 100%;
@@ -1920,14 +1931,14 @@ body.menu-is-open {
   }
 
   .asset-img-div {
-    height: 240px;
+    height: auto;
   }
   .home-content-project {
     width: 100%;
     margin-bottom: 2rem;
   }
   .portfolio {
-    margin-top: 20rem;
+    margin-top: 16rem;
   }
 }
 
@@ -1936,32 +1947,16 @@ body.menu-is-open {
     font-size: 7.2rem;
     margin-bottom: 4.5rem;
   }
-  .service-titles {
-    font-size: 4.7rem;
-    line-height: 1;
+  .home-img {
   }
-
-  .subhead {
-    font-size: 1.6rem;
+  .display-2 {
+    font-size: 9rem;
   }
-  .asset-span {
-    font-size: 1.7rem;
+  .service-heading2 {
+    height: auto;
   }
-
-  .section-header.has-bottom-sep::before {
-    width: 300px;
-  }
-}
-@media only screen and (min-width: 801px) {
-  .display-1 {
-    font-size: 7.2rem;
-    margin-bottom: 4.5rem;
-  }
-  .service-titles {
-    font-size: 82px;
-  }
-  .asset-span {
-    font-size: 2rem;
+  .hp-img {
+    margin-top: 0px;
   }
 
   .subhead {
@@ -2012,6 +2007,10 @@ body.menu-is-open {
   .item-title {
     font-size: 2.1rem;
   }
+}
+.home-service-text {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* ===================================================================
@@ -2516,6 +2515,7 @@ var .s-home .grid-overlay > div {
   text-align: left;
 }
 .text-fluid2 p {
+  font-family: "Ubuntu-font2";
   margin-bottom: 0;
 }
 
@@ -2694,7 +2694,7 @@ var .s-home .grid-overlay > div {
 .spin-letter {
   display: inline-block;
   animation: spin 2.3s linear infinite; /* Adjust the animation duration as needed */
-  height: 96px;
+  height: 70px;
 }
 
 @keyframes spin {
@@ -2757,6 +2757,11 @@ var .s-home .grid-overlay > div {
   top: 50%;
   left: -6px;
   margin-top: -6px;
+}
+.home-service-p {
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1px;
+  font-size: 1.7rem;
 }
 
 .home-social li:hover span {
@@ -2847,10 +2852,10 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1600px) {
   .home-content h1 {
-    font-size: 15rem;
+    font-size: 9rem;
   }
   .spin-letter {
-    height: 60px;
+    height: 44px;
   }
   .site-logo {
     font-size: 4rem;
@@ -2865,18 +2870,26 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (min-width: 1600px) {
   .smoothscroll {
-    font-size: 6rem;
+    font-size: 8rem;
   }
   .home-content h1 {
-    font-size: 17rem;
+    font-size: 10rem;
   }
   .display-1 {
     font-size: 9.2rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .home-img {
+    max-width: 550px;
+  }
+  .home-service-text {
+    font-size: 4rem;
+  }
+}
 @media only screen and (min-width: 1101px) {
   .service-title {
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 100;
   }
 }
@@ -2890,10 +2903,10 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 1400px) {
   .home-content h1 {
-    font-size: 13rem;
+    font-size: 8rem;
   }
   .smoothscroll {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .home-content h3 {
@@ -2913,7 +2926,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h1 {
-    font-size: 9rem;
+    font-size: 7rem;
   }
 
   .home-content h3 {
@@ -2966,7 +2979,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 1000px) {
   .home-content h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
   .smoothscroll {
     font-size: 5rem;
@@ -2994,7 +3007,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 900px) {
   .home-content h1 {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   .home-content h3 {
@@ -3011,7 +3024,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 800px) {
   .home-content h1 {
-    font-size: 8.4rem;
+    font-size: 6.4rem;
   }
 
   .home-content h3 {
@@ -3051,7 +3064,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 700px) {
   .home-content h1 {
-    font-size: 8.2rem;
+    font-size: 7.2rem;
   }
 
   .home-content h3 {
@@ -3077,7 +3090,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   .home-content h3 {
@@ -3110,7 +3123,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 500px) {
   .home-content h1 {
-    font-size: 8rem;
+    font-size: 5.5rem;
   }
 
   .home-content h3 {
@@ -3125,9 +3138,12 @@ html.no-csstransitions .home-content__main {
   .site-logo {
     font-size: 4rem;
   }
+  .smoothscroll {
+    font-size: 7rem;
+  }
 
   .home-content h1 {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 
   .home-content__main {
@@ -3183,6 +3199,7 @@ html.no-csstransitions .home-content__main {
   counter-reset: ctr;
 }
 .image-div {
+  text-align: center;
   margin-top: -20rem;
   width: 100%;
 }
@@ -3452,7 +3469,7 @@ html.no-csstransitions .home-content__main {
 }
 .item-folio__thumb {
   height: 100%;
-  width: 100%;
+  width: 101%;
 }
 
 .item-folio__thumb img {
@@ -4052,7 +4069,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-social li a {
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   border: none !important;
 }
 

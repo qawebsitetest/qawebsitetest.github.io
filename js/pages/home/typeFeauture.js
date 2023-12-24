@@ -109,7 +109,7 @@ const options3 = {
 };
 const options4 = {
     targetClass: "display-2",
-    text: "Projects",
+    text: "Portfolio",
     delay: 200,
     cursorSpeed: 900
 };
