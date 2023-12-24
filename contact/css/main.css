@@ -1001,14 +1001,14 @@ select {
   display: block;
   height: 6rem;
   padding: 1.5rem 2.4rem;
-  border: 0;
+  border: 1px solid #9c9c9c;
   outline: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   line-height: 3rem;
   max-width: 100%;
-  background: rgba(255, 255, 255, 0.05);
+  background: #091020;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1082,7 +1082,11 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  color: #ffffff;
+  color: black;
+}
+.form-control-new {
+  background-color: white;
+  color: black;
 }
 
 label,
@@ -1197,7 +1201,7 @@ input[type="button"] {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #c5c5c5;
-  border: 0.2rem solid #c5c5c5;
+  border: 0.2rem solid #9c9c9c;
 }
 
 .btn:hover,
@@ -1210,10 +1214,13 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background-color: #b8b8b8;
+  background-color: #091020;
   border-color: #b8b8b8;
-  color: #000000;
+  color: white;
   outline: 0;
+}
+.submit-btn {
+  margin-top: 2rem;
 }
 
 /* button primary

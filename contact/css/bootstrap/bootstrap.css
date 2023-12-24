@@ -2106,7 +2106,7 @@ pre code {
 }
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  background-color: #091020;
   border-color: #f8c0c2;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(235, 77, 85, 0.25);
@@ -2136,7 +2136,7 @@ pre code {
 
 select.form-control:focus::-ms-value {
   color: #495057;
-  background-color: #fff;
+  background-color: #091020;
 }
 
 .form-control-file,
