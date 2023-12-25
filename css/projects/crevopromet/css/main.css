@@ -4146,6 +4146,9 @@ footer {
 footer a {
   color: #ffffff;
 }
+.display-4 {
+  min-height: 124px;
+}
 
 /* ------------------------------------------------------------------- 
  * ## copyright

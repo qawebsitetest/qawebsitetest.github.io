@@ -11,14 +11,20 @@
 
 
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/contact/css/style.css">
+  <script src="/contact/js/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" href="/contact/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/contact/css/main.css">
   <link rel="stylesheet" href="/contact/css/base.css">
+  <link rel="stylesheet" href="/contact/css/main.css">
+
   <link rel="stylesheet" href="/contact/css/vendor.css">
   <link rel="stylesheet" href="/contact/css/nav.css">
-
-
   <link rel="stylesheet" href="/contact/css/style.css">
+
+
+
+
+
 
   <title>Contact</title>
 </head>
@@ -29,7 +35,13 @@
 
   <!-- preloader
     ================================================== -->
-
+  <div id="preloader">
+    <div id="loader" class="dots-jump">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 
   <!-- header
     ================================================== -->
@@ -113,11 +125,11 @@
         <div class="home-content-project">
           <div class="row mb-5">
             <div class="col-md-4 mr-auto">
-              <h3 class="thin-heading mb-4">Serbia</h3>
-              <p class="contact-p">Bezanijska kosa, Belgrade</p>
+              <h3 class="thin-heading mb-4">SERBIA</h3>
+              <p class="contact-p">Belgrade</p>
             </div>
             <div class="col-md-6 ml-auto">
-              <h3 class="thin-heading mb-4">Contact Info</h3>
+              <h3 class="thin-heading mb-4">CONTACT INFO</h3>
               <p class="contact-p">T: +381 (61) 651 2677 <br> E: lugooodigital@gmail.com</p>
             </div>
           </div>
@@ -131,15 +143,19 @@
                 <div class="row justify-content-center">
                   <div class="col-md-12">
 
-                    <h3 class="thin-heading mb-4">Message Us</h3>
+                    <h3 class="thin-heading mb-4">MESSAGE US</h3>
 
-                    <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                    <form class="mb-5" method="post" name="contactForm" id="contact-from"
+                      action="http://127.0.0.1:5501/mail.php">
                       <div class="row">
                         <div class="col-md-6 form-group">
                           <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
                         </div>
                         <div class="col-md-6 form-group">
                           <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                         </div>
                       </div>
                       <div class="row">
@@ -150,7 +166,8 @@
                       </div>
                       <div class="row">
                         <div class="col-12">
-                          <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                          <input type="submit" name="send" value="Send Message"
+                            class="btn btn-primary rounded-0 py-2 px-4">
                           <span class="submitting"></span>
                         </div>
                       </div>
@@ -210,7 +227,7 @@
       </div>
     </div> <!-- end section-header -->
 
-    <div class="row contact-main" data-aos="fade-up">
+    <div class="row contact-main">
       <div class="col-full footer-flex">
         <div class="footer-info">
           <p class="contact-address letter-space" style="color: white;">
@@ -276,45 +293,7 @@
   </footer>
 
 
-  <!-- photoswipe background
-    ================================================== -->
-  <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
 
-    <div class="pswp__bg"></div>
-    <div class="pswp__scroll-wrap">
-
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <div class="pswp__ui pswp__ui--hidden">
-        <div class="pswp__top-bar">
-          <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-            title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button>
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
-            class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-      </div>
-
-    </div>
-
-  </div> <!-- end photoSwipe background -->
 
 
   <!-- Java Script
@@ -323,8 +302,7 @@
   <script src="./js/jquery-3.2.1.min.js"></script>
   <script src="./js/plugins.js"></script>
   <script src="./js/main.js"></script>
-
-  <script src="./js/plugins.js"></script>
+  <script src="./js/pages/contact/typeFeature.js"></script>
 
   <script src="/contact/js/jquery-3.3.1.min.js"></script>
   <script src="/contact/js/popper.min.js"></script>

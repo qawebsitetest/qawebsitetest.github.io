@@ -4256,6 +4256,10 @@ footer {
   text-align: center;
   position: relative;
 }
+.display-4 {
+  min-height: 124px;
+  font-weight: 100;
+}
 
 footer a {
   color: #ffffff;

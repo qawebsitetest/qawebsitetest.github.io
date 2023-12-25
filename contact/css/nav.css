@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Ubuntu-font2";
-  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
+  src: url("../../fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
     format("opentype");
   font-weight: lighter;
   font-style: normal;
