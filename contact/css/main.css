@@ -1072,6 +1072,12 @@ select {
 textarea {
   min-height: 25rem;
 }
+.text-area-div {
+  margin-bottom: 2rem;
+}
+.contact-form {
+  margin-top: 0px;
+}
 
 input[type="email"]:focus,
 input[type="number"]:focus,
@@ -1085,8 +1091,11 @@ select:focus {
   color: black;
 }
 .form-control-new {
-  background-color: white;
-  color: black;
+  background-color: #091020;
+  color: white;
+}
+.form-control-new:focus {
+  color: white;
 }
 
 label,
