@@ -2369,6 +2369,49 @@ var .s-home .grid-overlay > div {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.footer-flex {
+  display: flex;
+}
+.footer-info,
+.footer-social {
+  font-size: 2rem;
+}
+.footer-info {
+  width: 70%;
+  text-align: left;
+  line-height: 1.3;
+}
+.footer-social {
+  font-size: 1.5rem;
+
+  text-align: left;
+}
+.social-p-1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.ss-copyright {
+  text-align: left;
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  .footer-flex {
+    flex-direction: column;
+  }
+  .footer-social {
+    text-align: left;
+    padding-top: 2rem;
+    margin-top: 3rem;
+  }
+  .footer-info {
+    width: 100%;
+  }
+  .social-p {
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    line-height: 1;
+  }
+}
 
 .home-content::before {
   content: "";
@@ -4077,7 +4120,6 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
-  padding-top: 9rem;
   padding-bottom: 6rem;
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--main-bg-color);
