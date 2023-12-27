@@ -150,9 +150,12 @@ h6,
 .h5,
 .h6 {
   font-family: "Amatis-font", sans-serif;
-  font-weight: 600;
+  font-weight: 100;
   color: #091020;
   text-rendering: optimizeLegibility;
+}
+.bottom-mar {
+  margin-bottom: 1rem;
 }
 .p-text {
   color: #3b5d50;
@@ -320,7 +323,11 @@ b {
   line-height: inherit;
 }
 .col-block {
+  line-height: 0.9;
   margin-bottom: 3rem;
+}
+.margin-0 {
+  margin: 0px;
 }
 
 em,

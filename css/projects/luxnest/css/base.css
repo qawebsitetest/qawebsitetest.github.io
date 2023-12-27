@@ -451,7 +451,7 @@ textarea {
  * -------------------------------------- */
 [class*="col-"] {
   float: left;
-  padding: 0 20px;
+  padding: 0;
 }
 
 [class*="col-"] + [class*="col-"].end {
@@ -520,9 +520,9 @@ textarea {
 .col-full {
   width: 100%;
 }
-[class*="col-"] {
-  padding: 10px 15px;
-}
+/* [class*="col-"] {
+  padding: 10px;
+} */
 
 /* ------------------------------------------------------------------- 
  * ## medium size devices
@@ -534,7 +534,7 @@ textarea {
   }
 
   [class*="col-"] {
-    padding: 10px 15px;
+    padding: 10px;
   }
 
   .md-two,
@@ -649,7 +649,7 @@ textarea {
   }
 
   [class*="col-"] {
-    padding: 0 10px;
+    padding: 0;
   }
 
   .mob-1-4 {
@@ -700,7 +700,6 @@ textarea {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
-    margin-bottom: 15px;
   }
 
   [class*="col-"] + [class*="col-"].end {
