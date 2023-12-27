@@ -15,11 +15,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS
+        
     ================================================== -->
     <link rel="stylesheet" href="css/projects/luxnest/css/base.css">
     <link rel="stylesheet" href="css/projects/luxnest/css/vendor.css">
     <link rel="stylesheet" href="css/projects/luxnest/css/main.css">
     <link rel="stylesheet" href="css/nav.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 
 
@@ -192,9 +194,16 @@
 
         <div class="row bit-narrow">
 
-            <div class="col-full bottom-mar">
+            <div class="col-full bottom-mar text-animation">
+                <h1 class="ml3">LuxNest</h1>
+            </div>
+            <!-- <div class="col-full bottom-mar">
                 <img src="./images/projects/luxnest/LuxNest.png" class="large-image">
                 <img src="./images/projects/luxnest/LuxNest.png" class="small-image">
+            </div> -->
+            <div class="col-full bottom-mar">
+                <img src="./images/projects/luxnest/FullPageSS.png" class="large-image">
+                <img src="./images/projects/luxnest/FullPageSS-mobile.png" class="small-image">
             </div>
             <div class="col-full bottom-mar">
                 <video width="100%" height="100%" autoplay muted loop playsinline>
@@ -202,14 +211,12 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
+
             <div class="col-full bottom-mar">
                 <img src="./images/projects/luxnest/Iphone-mockup.png" class="large-image">
                 <img src="./images/projects/luxnest/Iphone-mockup-mobile.png" class="small-image">
             </div>
-            <div class="col-full bottom-mar">
-                <img src="./images/projects/luxnest/FullPageSS.png" class="large-image">
-                <img src="./images/projects/luxnest/FullPageSS-mobile.png" class="small-image">
-            </div>
+
             <div class="col-full">
                 <img src="./images/projects/luxnest/LuxNext-img (2).png" class="large-image">
                 <img src="./images/projects/luxnest/LuxNext-img (2).png" class="small-image">
@@ -217,6 +224,8 @@
             <div class="col-full">
                 <img src="./images/projects/luxnest/LuxNext-img (1).png" class="large-image">
                 <img src="./images/projects/luxnest/LuxNext-img (1).png" class="small-image">
+
+
             </div>
         </div> <!-- end about-desc -->
 
@@ -312,8 +321,29 @@
 
 
 
+    <script>
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0, 1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i + 1)
+            }).add({
+                targets: '.ml3',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
     <!-- Java Script
     ================================================== -->
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

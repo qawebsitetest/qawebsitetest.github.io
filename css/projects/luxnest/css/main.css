@@ -116,6 +116,13 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "AnticDidone";
+  src: url("./font-awesome/AnticDidone-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   font-family: "Amatis-font";
@@ -328,6 +335,23 @@ b {
 }
 .margin-0 {
   margin: 0px;
+}
+.text-animation {
+  text-align: center;
+  min-width: 200px;
+  min-height: 400px;
+
+  background-color: #eff2f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13rem;
+}
+.ml3 {
+  color: #3b5d50;
+  font-weight: 100;
+  font-size: min(24vw, 59vh);
+  font-family: "AnticDidone";
 }
 
 em,
@@ -1855,6 +1879,9 @@ body.menu-is-open {
   .display-1 {
     font-size: 3.6rem;
     margin-bottom: 4.5rem;
+  }
+  .text-animation {
+    margin-bottom: 7rem;
   }
   .p-text {
     font-size: 14px;
