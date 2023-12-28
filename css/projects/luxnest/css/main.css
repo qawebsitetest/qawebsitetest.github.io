@@ -1570,7 +1570,6 @@ body.menu-is-open {
 
 .bit-narrow {
   max-width: 100%;
-  margin-top: 7rem;
 }
 
 .darker {
@@ -1588,6 +1587,25 @@ body.menu-is-open {
   letter-spacing: -0.03rem;
   margin-top: 0;
   margin-bottom: 4.8rem;
+}
+.col-flex {
+  display: flex;
+}
+.h1-text {
+  line-height: 0.8;
+  font-size: 10rem;
+}
+.p-text-div {
+  letter-spacing: 0;
+  color: #091020;
+  line-height: 0.8;
+  font-size: 7rem;
+  font-weight: 100;
+  margin-top: 2rem;
+  font-family: "Ubuntu-font2";
+}
+.col-div {
+  width: 50%;
 }
 
 .subhead {
@@ -1881,7 +1899,19 @@ body.menu-is-open {
     margin-bottom: 4.5rem;
   }
   .text-animation {
-    margin-bottom: 7rem;
+    margin-bottom: 17rem;
+  }
+  .col-flex {
+    flex-direction: column;
+  }
+  .col-div {
+    width: 100%;
+  }
+  .h1-text {
+    font-size: 8rem;
+  }
+  .p-text-div {
+    font-size: 29px;
   }
   .p-text {
     font-size: 14px;
