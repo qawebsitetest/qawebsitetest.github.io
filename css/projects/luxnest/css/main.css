@@ -1589,6 +1589,7 @@ body.menu-is-open {
   margin-bottom: 4.8rem;
 }
 .col-flex {
+  margin: 3rem 0;
   display: flex;
 }
 .h1-text {
