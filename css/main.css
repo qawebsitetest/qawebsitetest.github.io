@@ -140,6 +140,21 @@ a {
   font-style: normal;
 }
 
+/* @font-face {
+  font-family: "Ubuntu-font";
+  src: url("/fonts/aspekta/aspekta-main/fonts/webfonts/Aspekta-300.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu-font2";
+  src: url("/fonts/LabGrotesque-Light.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: normal;
+} */
+
 .font2 {
   font-family: "Ubuntu-font2";
 }
