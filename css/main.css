@@ -123,6 +123,14 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Ubuntu-font3";
+  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Medium.otf")
+    format("opentype");
+
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Ubuntu-font";
@@ -134,7 +142,7 @@ a {
 
 @font-face {
   font-family: "Ubuntu-font2";
-  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Light.otf")
+  src: url("/fonts/Founders_Grotesk/FoundersGrotesk-Medium.otf")
     format("opentype");
   font-weight: lighter;
   font-style: normal;
@@ -2098,7 +2106,7 @@ body.menu-is-open {
   padding: 0;
   position: absolute;
   left: 7.5rem;
-  top: 50%;
+  top: 32%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2350,7 +2358,7 @@ body.menu-is-open {
   transition: all 0.5s ease-in-out;
   position: fixed;
   right: 8rem;
-  top: 30px;
+  top: 10px;
 }
 
 .header-menu-icon {
@@ -2366,7 +2374,6 @@ body.menu-is-open {
   top: 50%;
 }
 
-.header-menu-icon::before,
 .header-menu-icon::after {
   content: "";
   width: 100%;
@@ -2422,7 +2429,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 800px) {
   .header-logo {
-    left: 40px;
+    left: 30px;
   }
 
   .header-nav {
@@ -2446,7 +2453,7 @@ body.menu-is-open {
   }
 
   .header-menu-toggle {
-    top: 27px;
+    top: 3px;
     right: 25px;
   }
 }
@@ -2481,7 +2488,7 @@ body.menu-is-open {
   }
 
   .header-menu-toggle {
-    top: 21px;
+    top: 3px;
     right: 20px;
   }
 
@@ -3320,7 +3327,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
   .s-about {
-    padding-top: 12rem;
+    padding-top: 0rem;
   }
   .image-div {
     margin-top: 0;

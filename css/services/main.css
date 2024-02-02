@@ -2080,7 +2080,7 @@ body.menu-is-open {
   padding: 0;
   position: absolute;
   left: 7.5rem;
-  top: 50%;
+  top: 32%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2332,7 +2332,7 @@ body.menu-is-open {
   transition: all 0.5s ease-in-out;
   position: fixed;
   right: 8rem;
-  top: 30px;
+  top: 10px;
 }
 
 .header-menu-icon {
@@ -2348,7 +2348,6 @@ body.menu-is-open {
   top: 50%;
 }
 
-.header-menu-icon::before,
 .header-menu-icon::after {
   content: "";
   width: 100%;
@@ -2404,7 +2403,7 @@ body.menu-is-open {
 
 @media only screen and (max-width: 800px) {
   .header-logo {
-    left: 40px;
+    left: 30px;
   }
 
   .header-nav {
@@ -2428,7 +2427,7 @@ body.menu-is-open {
   }
 
   .header-menu-toggle {
-    top: 27px;
+    top: 3px;
     right: 25px;
   }
 }
@@ -2463,7 +2462,7 @@ body.menu-is-open {
   }
 
   .header-menu-toggle {
-    top: 21px;
+    top: 3px;
     right: 20px;
   }
 

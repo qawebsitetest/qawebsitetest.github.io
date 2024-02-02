@@ -90,7 +90,7 @@ function dynamicTextTyping(options) {
 // Example usage
 const options = {
     targetClass: "h1add",
-    text: "B2B & Full Stack Marketing agency Digital Advertising Web Development Application Development",
+    text: "B2B & Full Stack Marketing agency Web Development Application Development",
     delay: 80,
     cursorSpeed: 900
 };
